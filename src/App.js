@@ -1,7 +1,8 @@
 import "./App.css";
+import Menu from "./components/menu/menu";
 
 function App() {
-  return <h1> hello world</h1>;
+  return <Menu />;
 }
 
 export default App;
