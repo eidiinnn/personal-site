@@ -1,4 +1,4 @@
-nav {
+.menu-nav {
   max-width: 100%;
   background-color: var(--dark-blue-color);
   display: flex;
@@ -9,13 +9,13 @@ nav {
   font-family: var(--roboto-font);
 }
 
-h1 {
+.menu-h1 {
   color: var(--pink-color);
   font-size: 1.3em;
   font-weight: 700;
 }
 
-ul {
+.menu-ul {
   min-width: min-content;
   display: flex;
   flex-direction: row;
@@ -25,26 +25,26 @@ ul {
   font-weight: 300;
 }
 
-li {
+.menu-li {
   padding: 10px;
 }
 
-.liSelected {
+.menu-li-Selected {
   color: var(--pink-color) !important ;
   font-weight: 400 !important;
 }
 
 @media only screen and (max-width: 480px) {
-  nav {
+  .menu-nav {
     flex-direction: column;
     justify-content: center;
     padding: 10px 0px 10px 0px;
   }
-  h1 {
+  .menu-h1 {
     font-size: 1.5em;
     margin: 0px;
   }
-  ul {
+  .menu-ul {
     font-size: 1em;
     flex-shrink: 200px;
     flex-wrap: nowrap;

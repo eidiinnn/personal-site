@@ -1,17 +1,16 @@
 import React, { Component } from "react";
-import "./style.css";
-import "../FontAndColors/style.css";
+import "./menu.css";
 
 export default class Menu extends Component {
   render() {
     return (
-      <nav>
-        <h1>&lt;Eduardo&nbsp;/&gt;</h1>
-        <ul>
-          <li className="liSelected">./Início/</li>
-          <li>Sobre</li>
-          <li>Portifólio</li>
-          <li>Contato</li>
+      <nav className="menu-nav">
+        <h1 className="menu-h1">&lt;Eduardo&nbsp;/&gt;</h1>
+        <ul className="menu-ul">
+          <li className="menu-li menu-li-Selected">./Início/</li>
+          <li className="menu-li">Sobre</li>
+          <li className="menu-li">Portifólio</li>
+          <li className="menu-li">Contato</li>
         </ul>
       </nav>
     );
