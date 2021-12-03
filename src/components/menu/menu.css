@@ -9,9 +9,8 @@
   font-family: var(--roboto-font);
 }
 
-.menu-h1 {
+.menu-h3 {
   color: var(--pink-color);
-  font-size: 1.3em;
   font-weight: 700;
 }
 

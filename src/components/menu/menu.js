@@ -5,7 +5,7 @@ export default class Menu extends Component {
   render() {
     return (
       <nav className="menu-nav">
-        <h1 className="menu-h1">&lt;Eduardo&nbsp;/&gt;</h1>
+        <h3 className="menu-h3">&lt;Eduardo&nbsp;/&gt;</h3>
         <ul className="menu-ul">
           <li className="menu-li menu-li-Selected">./Início/</li>
           <li className="menu-li">Sobre</li>
