@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./sobre.css";
 
 export default class Sobre extends Component {
@@ -13,6 +14,14 @@ export default class Sobre extends Component {
             odio dui, ac imperdiet diam faucibus ac. Nulla blandit ipsum bibendum nibh
             pulvinar vehicula. Mauris aliquam.
           </p>
+          <div className="sobre-icons-container">
+            <a href="https://github.com/eidiinnn">
+              <FaGithub className="sobre-icons" />
+            </a>
+            <a href="https://www.linkedin.com/in/eduardo-silva-pn">
+              <FaLinkedin className="sobre-icons" />
+            </a>
+          </div>
         </div>
       </section>
     );

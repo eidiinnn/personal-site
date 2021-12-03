@@ -31,9 +31,23 @@
   font-weight: 300;
   margin: 0px;
 }
+.sobre-icons-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+.sobre-icons {
+  font-size: 25px;
+  padding: 5px;
+  color: var(--white-color);
+}
 
 @media only screen and (max-width: 480px) {
   .sobre-container {
     max-width: 300px;
+  }
+  .sobre-icons {
+    font-size: 33px;
+    margin: 5px;
   }
 }
