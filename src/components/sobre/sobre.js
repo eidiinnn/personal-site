@@ -4,7 +4,7 @@ import "./sobre.css";
 export default class Sobre extends Component {
   render() {
     return (
-      <article className="sobre-article">
+      <section className="sobre-section">
         <div className="sobre-container">
           <img className="sobre-profile-image" src="/profile.jpg" alt="it's me"></img>
           <h1 className="sobre-h1">Eduardo da Silva</h1>
@@ -14,7 +14,7 @@ export default class Sobre extends Component {
             pulvinar vehicula. Mauris aliquam.
           </p>
         </div>
-      </article>
+      </section>
     );
   }
 }
