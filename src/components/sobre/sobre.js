@@ -5,7 +5,7 @@ import "./sobre.css";
 export default class Sobre extends Component {
   render() {
     return (
-      <section className="sobre-section">
+      <section className="default-section sobre-section">
         <div className="sobre-container">
           <img className="sobre-profile-image" src="/profile.jpg" alt="it's me"></img>
           <h1 className="sobre-h1">Eduardo da Silva</h1>

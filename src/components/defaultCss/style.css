@@ -24,3 +24,21 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
+.default-section {
+  font-family: var(--roboto-font);
+  max-width: 100%;
+  height: min-content;
+  padding: 100px 0px 0px 0px;
+  background-color: var(--dark-blue-color);
+  justify-content: center;
+  align-items: center;
+}
+.default-selection-h1 {
+  margin: 0px;
+  padding: 30px 0px 20px 0px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--pink-color);
+}
