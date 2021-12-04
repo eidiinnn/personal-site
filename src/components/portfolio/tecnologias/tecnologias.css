@@ -1,0 +1,40 @@
+.tecnologias-section {
+  font-family: var(--roboto-font);
+  max-width: 100%;
+  background-color: var(--dark-blue-color);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  align-self: baseline;
+}
+.tecnologias-h2 {
+  grid-row: 1;
+  margin: 0px;
+  padding: 30px 0px 20px 0px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--blue-color);
+}
+.tecnologias-container {
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.tecnologias-container-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.tecnologias-icons {
+  color: var(--white-color);
+  margin: 10px;
+  font-size: 40px;
+}

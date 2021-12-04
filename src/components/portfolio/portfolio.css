@@ -4,7 +4,7 @@
   height: 100vh;
   background-color: var(--dark-blue-color);
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
   flex-direction: column;
 }
 .portfolio-h1 {
