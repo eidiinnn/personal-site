@@ -5,6 +5,7 @@ import Menu from "./components/menu/menu";
 import Header from "./components/header/header";
 import Sobre from "./components/sobre/sobre";
 import Portfolio from "./components/portfolio/portfolio";
+import Contato from "./components/contato/contato";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Sobre />
       <Portfolio />
+      <Contato />
     </div>
   );
 }
