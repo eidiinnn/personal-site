@@ -46,6 +46,10 @@
   .sobre-container {
     max-width: 300px;
   }
+  .sobre-profile-image {
+    width: 150px;
+    height: 150px;
+  }
   .sobre-icons {
     font-size: 33px;
     margin: 5px;
