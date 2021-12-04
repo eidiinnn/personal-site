@@ -6,7 +6,7 @@ export default class BackTopTop extends Component {
   render() {
     return (
       <a href="#inicio">
-        <div class="backToTop-div">
+        <div className="backToTop-div">
           <FaArrowUp />
         </div>
       </a>

@@ -15,18 +15,18 @@ import {
 export default class Tecnologias extends Component {
   render() {
     return (
-      <section class="tecnologias-section">
-        <h2 class="tecnologias-h2">Tecnologias que eu sei</h2>
-        <div class="tecnologias-container-icons">
-          <FaJsSquare class="tecnologias-icons" title="JavaScript" />
-          <FaNode class="tecnologias-icons" title="NodeJs" />
-          <FaReact class="tecnologias-icons" title="React" />
-          <DiMongodb class="tecnologias-icons" title="MongoDB" />
-          <FaGitAlt class="tecnologias-icons" title="Git" />
-          <FaGithub class="tecnologias-icons" title="GitHub" />
-          <FaDocker class="tecnologias-icons" title="Docker" />
-          <FaFigma class="tecnologias-icons" title="Figma" />
-          <FaLinux class="tecnologias-icons" title="Linux" />
+      <section className="tecnologias-section">
+        <h2 className="tecnologias-h2">Tecnologias que eu sei</h2>
+        <div className="tecnologias-container-icons">
+          <FaJsSquare className="tecnologias-icons" title="JavaScript" />
+          <FaNode className="tecnologias-icons" title="NodeJs" />
+          <FaReact className="tecnologias-icons" title="React" />
+          <DiMongodb className="tecnologias-icons" title="MongoDB" />
+          <FaGitAlt className="tecnologias-icons" title="Git" />
+          <FaGithub className="tecnologias-icons" title="GitHub" />
+          <FaDocker className="tecnologias-icons" title="Docker" />
+          <FaFigma className="tecnologias-icons" title="Figma" />
+          <FaLinux className="tecnologias-icons" title="Linux" />
         </div>
       </section>
     );
