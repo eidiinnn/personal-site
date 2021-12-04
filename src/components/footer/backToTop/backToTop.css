@@ -9,10 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 1s;
+  transition-duration: 500ms;
 }
 .backToTop-div:hover {
   width: 55px;
   height: 55px;
-  color: var(--blue-color);
+  color: var(--white-color);
 }
