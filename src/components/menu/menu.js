@@ -4,7 +4,7 @@ import "./menu.css";
 export default class Menu extends Component {
   render() {
     return (
-      <nav className="menu-nav">
+      <nav id="inicio" className="menu-nav">
         <h3 className="menu-h3">&lt;Eduardo&nbsp;/&gt;</h3>
         <ul className="menu-ul">
           <a href="#inicio">
