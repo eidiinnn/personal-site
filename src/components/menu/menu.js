@@ -7,10 +7,18 @@ export default class Menu extends Component {
       <nav className="menu-nav">
         <h3 className="menu-h3">&lt;Eduardo&nbsp;/&gt;</h3>
         <ul className="menu-ul">
-          <li className="menu-li menu-li-Selected">./Início/</li>
-          <li className="menu-li">Sobre</li>
-          <li className="menu-li">Portfólio</li>
-          <li className="menu-li">Contato</li>
+          <a href="#inicio">
+            <li className="menu-li menu-li-Selected">/Início/</li>
+          </a>
+          <a href="#sobre">
+            <li className="menu-li">/Sobre/</li>
+          </a>
+          <a href="#portfolio">
+            <li className="menu-li">/Portfólio/</li>
+          </a>
+          <a href="#contato">
+            <li className="menu-li">/Contato/</li>
+          </a>
         </ul>
       </nav>
     );

@@ -6,7 +6,7 @@ import "./header.css";
 export default class Menu extends Component {
   render() {
     return (
-      <header className="header-head">
+      <header id="inicio" className="header-head">
         <div className="header-container">
           <BiCodeAlt className="header-container-icon" />
           <div className="header-container-text">

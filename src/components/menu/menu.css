@@ -26,11 +26,11 @@
 
 .menu-li {
   padding: 10px;
+  color: var(--white-color);
+  font-weight: 400;
 }
-
-.menu-li-Selected {
-  color: var(--pink-color) !important ;
-  font-weight: 400 !important;
+.menu-li:hover {
+  color: var(--pink-color) !important;
 }
 
 @media only screen and (max-width: 480px) {
