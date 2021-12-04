@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BackTopTop from "./backToTop/backToTop";
 import "./footer.css";
 
 export default class Footer extends Component {
@@ -6,6 +7,7 @@ export default class Footer extends Component {
     return (
       <section class="footer-section">
         <p>© 2021 Eduardo da Silva. Todos os direitos reservados.</p>
+        <BackTopTop />
       </section>
     );
   }
