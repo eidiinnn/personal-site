@@ -4,6 +4,7 @@ import "./components/FontAndColors/style.css";
 import Menu from "./components/menu/menu";
 import Header from "./components/header/header";
 import Sobre from "./components/sobre/sobre";
+import Portfolio from "./components/portfolio/portfolio";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Menu />
       <Header />
       <Sobre />
+      <Portfolio />
     </div>
   );
 }
