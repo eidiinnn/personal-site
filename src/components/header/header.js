@@ -12,9 +12,8 @@ export default class Menu extends Component {
           <div className="header-container-text">
             <div className="header-container-html-text">&lt;p&gt;</div>
             <p className="header-container-text-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum
-              odio dui, ac imperdiet diam faucibus ac. Nulla blandit ipsum bibendum nibh
-              pulvinar vehicula. Mauris aliquam
+              “Medir o progresso da programação por linhas de código é como medir o
+              progresso da construção de aeronaves em termos de peso.” -Bill Gates
             </p>
             <div className="header-container-html-text">&lt;/p&gt;</div>
           </div>

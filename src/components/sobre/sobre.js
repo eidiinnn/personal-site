@@ -10,9 +10,9 @@ export default class Sobre extends Component {
           <img className="sobre-profile-image" src="/profile.jpg" alt="it's me"></img>
           <h1 className="sobre-h1">Eduardo da Silva</h1>
           <p className="sobre-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum
-            odio dui, ac imperdiet diam faucibus ac. Nulla blandit ipsum bibendum nibh
-            pulvinar vehicula. Mauris aliquam.
+            Tenho 23 anos e sou apaixonado por tecnologia, gosto muito de aprender coisas
+            novas e sempre me disponho a isso, tenho experiência em NodeJS, MongoDB, API,
+            React entre outros.
           </p>
           <div className="sobre-icons-container">
             <a href="https://github.com/eidiinnn">
