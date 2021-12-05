@@ -37,7 +37,7 @@ export default class Contato extends Component {
           <input id="from_name" className="contato-input" type="email"></input>
           <label className="contato-label">Mensagem:</label>
           <textarea id="message" className="contato-input contato-input-text"></textarea>
-          <input className="contato-submit" type="submit" value="Enviar"></input>
+          <input className="contato-submit" type="submit"></input>
         </form>
       </section>
     );

@@ -38,6 +38,13 @@
   border-radius: 7px;
   border-width: 2px;
   align-self: flex-end;
+  transition: 700ms;
+}
+input[type="submit"]:hover {
+  border-color: var(--blue-color);
+}
+input[type="submit"]:active {
+  border-color: var(--green-color);
 }
 
 @media only screen and (max-width: 550px) {
