@@ -9,7 +9,7 @@ export default class Contato extends Component {
       from_name: e.target.from_name.value,
       message: e.target.message.value,
     };
-    if (!toSend.from_name || !toSend.mensage)
+    if (!toSend.from_name || !toSend.message)
       return alert("Não pode haver espaço vazios");
     emailjs
       .send(
