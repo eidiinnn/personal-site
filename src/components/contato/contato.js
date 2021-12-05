@@ -9,8 +9,7 @@ export default class Contato extends Component {
       from_name: e.target.from_name.value,
       message: e.target.message.value,
     };
-    if (!toSend.from_name || !toSend.message)
-      return alert("Não pode haver espaço vazios");
+    if (!toSend.from_name || !toSend.message) return alert("Não pode haver espaço vazio");
     emailjs
       .send(
         process.env.REACT_APP_SERVICE,
@@ -39,7 +38,7 @@ export default class Contato extends Component {
           <input id="from_name" className="contato-input" type="email"></input>
           <label className="contato-label">Mensagem:</label>
           <textarea id="message" className="contato-input contato-input-text"></textarea>
-          <input className="contato-submit" type="submit"></input>
+          <input className="contato-submit" type="submit" value="Enviar"></input>
         </form>
       </section>
     );
