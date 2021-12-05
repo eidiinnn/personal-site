@@ -6,7 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
       <section className="footer-section">
-        <p>© 2021 Eduardo da Silva. Todos os direitos reservados.</p>
+        <p>{"Copyright (c) 2021 Eduardo da Silva"}</p>
         <BackTopTop />
       </section>
     );
