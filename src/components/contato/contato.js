@@ -22,7 +22,7 @@ export default class Contato extends Component {
           alert("Enviado");
         },
         (err) => {
-          console.log(
+          alert(
             "Error, entre em contato comigo diretamente em eduardosilva.pn@gmail.com"
           );
         }

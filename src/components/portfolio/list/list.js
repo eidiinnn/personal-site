@@ -6,7 +6,7 @@ import "./list.css";
 
 export default class list extends Component {
   componentDidMount = () => {
-    fetch("https://api.github.com/users/eidiinnn/repos")
+    fetch("https://api.github.com/users/eidiinnn/repos?per_page=6")
       .then((res) => res.json())
       .then((result) => {
         this.setState({
@@ -24,7 +24,7 @@ export default class list extends Component {
       <div>
         <ul className="list-ul">
           {reposList.map((repos) => {
-            const createDate = new Date(repos.updated_at);
+            const createDate = new Date(repos.created_at);
             return (
               <a key={repos.name} href={repos.html_url}>
                 <li href={repos.html_url} className="list-li">
