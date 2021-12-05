@@ -6,7 +6,7 @@ import "./list.css";
 
 export default class list extends Component {
   componentDidMount = () => {
-    fetch("https://api.github.com/users/eidiinnn/repos")
+    fetch("https://api.github.com/users/eidiinnn/repos?per_page=6")
       .then((res) => res.json())
       .then((result) => {
         this.setState({
