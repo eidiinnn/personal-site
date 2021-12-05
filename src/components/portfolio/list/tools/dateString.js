@@ -1,7 +1,7 @@
 export default class DateString {
   static create(date) {
-    let day = date.getDay();
-    let month = date.getMonth();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
     let year = date.getFullYear();
 
     if (day < 10) day = "0" + day;
