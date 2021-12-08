@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import jsonList from "./list.json";
 import DateString from "./tools/dateString";
 import isFork from "./tools/isFork";
 import { FaClock } from "react-icons/fa";
@@ -6,13 +7,15 @@ import "./list.css";
 
 export default class list extends Component {
   componentDidMount = () => {
-    fetch("https://api.github.com/users/eidiinnn/repos?per_page=6")
-      .then((res) => res.json())
-      .then((result) => {
-        this.setState({
-          reposList: result,
+    for (const value of jsonList) {
+      fetch(`https://api.github.com/repos/eidiinnn/${value}`)
+        .then((res) => res.json())
+        .then((result) => {
+          this.setState((previousState) => ({
+            reposList: [...previousState.reposList, result],
+          }));
         });
-      });
+    }
   };
 
   state = {
