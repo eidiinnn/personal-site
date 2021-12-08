@@ -45,14 +45,26 @@
   color: var(--pink-color);
   font-weight: 400;
 }
-.msg-role-para-baixo-cursor {
-  background: var(--color-pink);
+.cursor {
+  background: lime;
   line-height: 17px;
   margin-left: 3px;
   animation: blink 0.8s infinite;
-  width: 5px;
+  width: 4px;
   height: 18px;
   display: inline-block;
+}
+
+@keyframes blink {
+  0% {
+    background: var(--pink-color);
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: var(--pink-color);
+  }
 }
 
 @media only screen and (max-width: 725px) {

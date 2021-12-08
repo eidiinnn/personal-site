@@ -20,7 +20,7 @@ export default class Menu extends Component {
         </div>
         <div className="msg-role-para-baixo">
           <Typewriter
-            cursorClassName="msg-role-para-baixo-cursor"
+            cursorClassName="cursor"
             words={["(roleParaBaixo) => {}", "<RoleParaBaixo />"]}
           />
         </div>
