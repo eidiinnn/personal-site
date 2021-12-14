@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BackTopTop from "./backToTop/backToTop";
+import BackTopTop from "./backToTop";
 import "./footer.css";
 
 export default class Footer extends Component {

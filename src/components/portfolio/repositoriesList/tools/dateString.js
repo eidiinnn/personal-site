@@ -1,5 +1,5 @@
 export default class DateString {
-  static create(date) {
+  static formatToString(date) {
     let day = date.getDate();
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
