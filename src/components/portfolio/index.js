@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import List from "./list/list";
-import Tecnologias from "./tecnologias/tecnologias";
+import CreateRepositoriesList from "./repositoriesList/createRepositoriesList";
+import Tecnologias from "./tecnologias/";
 import "./portfolio.css";
 
 export default class Portfolio extends Component {
@@ -8,7 +8,7 @@ export default class Portfolio extends Component {
     return (
       <section id="portfolio" className="default-section portfolio-section">
         <h1 className="default-selection-h1 portfolio-h1">Portfólio</h1>
-        <List />
+        <CreateRepositoriesList />
         <Tecnologias />
       </section>
     );
