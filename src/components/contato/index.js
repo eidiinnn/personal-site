@@ -3,18 +3,19 @@ import emailjs from "emailjs-com";
 import "./contato.css";
 
 export default class Contato extends Component {
-  email = (e) => {
-    e.preventDefault();
-    const toSend = {
-      from_name: e.target.from_name.value,
-      message: e.target.message.value,
+  email = (event) => {
+    event.preventDefault();
+    const clientContactSubmit = {
+      from_name: event.target.from_name.value,
+      message: event.target.message.value,
     };
-    if (!toSend.from_name || !toSend.message) return alert("Não pode haver espaço vazio");
+    if (!clientContactSubmit.from_name || !clientContactSubmit.message)
+      return alert("Não pode haver espaço vazio");
     emailjs
       .send(
         process.env.REACT_APP_SERVICE,
         process.env.REACT_APP_TEMPLATE,
-        toSend,
+        clientContactSubmit,
         process.env.REACT_APP_USER
       )
       .then(
