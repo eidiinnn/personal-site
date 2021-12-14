@@ -6,7 +6,7 @@ import Header from "./components/header";
 import Sobre from "./components/sobre";
 import Portfolio from "./components/portfolio/";
 import Contato from "./components/contato/contato";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer";
 
 function App() {
   return (
