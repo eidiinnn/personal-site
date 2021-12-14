@@ -3,7 +3,7 @@ import "./App.css";
 import "./components/defaultCss/style.css";
 import Menu from "./components/menu";
 import Header from "./components/header";
-import Sobre from "./components/sobre/sobre";
+import Sobre from "./components/sobre";
 import Portfolio from "./components/portfolio/";
 import Contato from "./components/contato/contato";
 import Footer from "./components/footer/footer";
