@@ -38,10 +38,10 @@ export default class Email {
       )
       .then(
         (response) => {
-          return Promise.resolve();
+          return Promise.resolve(response);
         },
         (err) => {
-          return Promise.reject();
+          return Promise.reject(err);
         }
       );
   }
