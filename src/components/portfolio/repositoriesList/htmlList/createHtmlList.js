@@ -10,7 +10,12 @@ export default class createHtmlList {
         {repositoriesList.map((repository) => {
           const createdDate = new Date(repository.created_at);
           return (
-            <a key={repository.name} href={repository.html_url}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              key={repository.name}
+              href={repository.html_url}
+            >
               <li href={repository.html_url} className="list-li">
                 <h2 className="list-h2">{repository.name}</h2>
                 <div className="list-dateFork">
