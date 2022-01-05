@@ -9,7 +9,7 @@ export default class Github {
       await fetch(`https://api.github.com/repos/${userName}/${repositoryName}`)
         .then((res) => res.json())
         .then((githubResponse) => {
-          if (!githubResponse.id) toBeReturned.requisitionsStatus.failNumber = +1;
+          if (!githubResponse.id) toBeReturned.requisitionsStatus.failNumber += 1;
           else toBeReturned.list.push(githubResponse);
         });
     }
