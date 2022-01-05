@@ -33,3 +33,13 @@ test("getInfoOfRepositoriesList return more than one repository", () => {
     expect(returnedList.list.length).toBe(2);
   });
 });
+
+test("getInfoOfRepositoriesList detect more than one repeated repositories", () => {
+  return Github.createRepositoriesWithDetailsList("eidiinnn", [
+    "repository-not-exist",
+    "repository-not-exist",
+    "repository-not-exist",
+  ]).then((returnedList) => {
+    expect(returnedList.requisitionsStatus.failNumber).toBe(3);
+  });
+});
