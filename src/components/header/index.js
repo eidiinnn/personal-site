@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { Typewriter } from "typewriting-react";
+import { textsAndConfigs } from "../../textsAndConfigs";
 import "./header.css";
 
 export default class Menu extends Component {
@@ -11,10 +12,7 @@ export default class Menu extends Component {
           <BiCodeAlt className="header-container-icon" />
           <div className="header-container-text">
             <div className="header-container-html-text">&lt;p&gt;</div>
-            <p className="header-container-text-p">
-              “Medir o progresso da programação por linhas de código é como medir o
-              progresso da construção de aeronaves em termos de peso.” -Bill Gates
-            </p>
+            <p className="header-container-text-p">{textsAndConfigs.headerText}</p>
             <div className="header-container-html-text">&lt;/p&gt;</div>
           </div>
         </div>
