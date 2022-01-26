@@ -17,7 +17,7 @@ export default class About extends Component {
       <Container id="about">
         <ProfileImage src={profile} alt="it's me"></ProfileImage>
         <MyName>Eduardo da Silva</MyName>
-        <ShortText center>{textsAndConfigs.sobreMimText}</ShortText>
+        <ShortText center>{textsAndConfigs.aboutMeText}</ShortText>
         <IconContainer>
           <IconLink href="https://github.com/eidiinnn">
             <FaGithub className="sobre-icons" />
