@@ -1,14 +1,22 @@
 import { BiError } from "react-icons/bi";
 import React, { Component } from "react";
-import "./errorMessage.css"
+import {
+  ResumeListErrorContainer,
+  ResumeListErrorIcon,
+  ResumeListErrorText,
+} from "../../../../style";
 
-export default class Error extends Component{
+export default class Error extends Component {
   render() {
     return (
-      <div className="errorMessage-div">
-        <BiError className="errorMessage-icon" />
-        <div className="errorMessage-Text">Não foi possível carregar os repositórios</div>
-      </div>
+      <ResumeListErrorContainer>
+        <ResumeListErrorIcon>
+          <BiError />
+        </ResumeListErrorIcon>
+        <ResumeListErrorText>
+          Não foi possível carregar os repositórios
+        </ResumeListErrorText>
+      </ResumeListErrorContainer>
     );
   }
 }
