@@ -14,7 +14,7 @@ import {
 export default class Sobre extends Component {
   render() {
     return (
-      <Container>
+      <Container id="sobre">
         <ProfileImage src={profile} alt="it's me"></ProfileImage>
         <MyName>Eduardo da Silva</MyName>
         <ShortText center>{textsAndConfigs.sobreMimText}</ShortText>

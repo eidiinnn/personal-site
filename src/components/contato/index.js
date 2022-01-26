@@ -24,7 +24,7 @@ export default class Contato extends Component {
 
   render() {
     return (
-      <Container>
+      <Container id="contato">
         <ContainerTitle>Contato</ContainerTitle>
         <ContactForm id="form" onSubmit={this.email}>
           <ContactLabel>Email:</ContactLabel>

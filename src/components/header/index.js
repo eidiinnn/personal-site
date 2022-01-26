@@ -13,7 +13,7 @@ import {
 export default class Menu extends Component {
   render() {
     return (
-      <Header>
+      <Header id="inicio">
         <HeaderIconTextContainer>
           <HeaderIcon>
             <BiCodeAlt />
