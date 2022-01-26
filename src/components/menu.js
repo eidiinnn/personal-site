@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavMenu, NavTitle, NavUl, NavLi, NavLink } from "../../style";
+import { NavMenu, NavTitle, NavUl, NavLi, NavLink } from "../style";
 
 export default class Menu extends Component {
   render() {

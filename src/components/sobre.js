@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { textsAndConfigs } from "../../textsAndConfigs";
-import profile from "../../images/profile.jpg";
+import { textsAndConfigs } from "../textsAndConfigs";
+import profile from "../images/profile.jpg";
 import {
   Container,
   ShortText,
@@ -9,7 +9,7 @@ import {
   ProfileImage,
   IconContainer,
   IconLink,
-} from "../../style";
+} from "../style";
 
 export default class Sobre extends Component {
   render() {

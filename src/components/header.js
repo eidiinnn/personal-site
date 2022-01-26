@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { Typewriter } from "typewriting-react";
-import { textsAndConfigs } from "../../textsAndConfigs";
+import { textsAndConfigs } from "../textsAndConfigs";
 import {
   Header,
   ShortText,
   HeaderIconTextContainer,
   HeaderIcon,
   HeaderRoleParaBaixo,
-} from "../../style";
+} from "../style";
 
 export default class Menu extends Component {
   render() {
