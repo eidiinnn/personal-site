@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { textsAndConfigs } from "../../textsAndConfigs";
-import profile from "./profile.jpg";
+import profile from "../../images/profile.jpg";
 import {
   Container,
   ShortText,
