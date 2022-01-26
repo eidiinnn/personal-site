@@ -1,4 +1,4 @@
-import Email from "../../components/contato/sendEmail";
+import Email from "../../components/contact/sendEmail";
 
 test("normal email send process", () => {
   const emailConst = new Email("test@test.com", "message");

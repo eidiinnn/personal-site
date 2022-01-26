@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import { NavMenu, NavTitle, NavUl, NavLi, NavLink } from "../style";
 
-export default class Menu extends Component {
+export default class Navbar extends Component {
   render() {
     return (
       <NavMenu>
         <NavTitle>&lt;Eduardo&nbsp;/&gt;</NavTitle>
         <NavUl>
           <NavLi>
-            <NavLink href="#inicio">/Início/</NavLink>
+            <NavLink href="#home">/Início/</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink href="#sobre">/Sobre/</NavLink>
+            <NavLink href="#about">/Sobre/</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink href="#portfolio">/Portfólio/</NavLink>
+            <NavLink href="#resume">/Portfólio/</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink href="#contato">/Contato/</NavLink>
+            <NavLink href="#contact">/Contato/</NavLink>
           </NavLi>
         </NavUl>
       </NavMenu>

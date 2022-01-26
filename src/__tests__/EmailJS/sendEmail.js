@@ -1,4 +1,4 @@
-import Email from "../../components/contato/sendEmail";
+import Email from "../../components/contact/sendEmail";
 
 test("when receiving a with an empty string", () => {
   const emailConst = new Email("", "message");

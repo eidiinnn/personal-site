@@ -11,10 +11,10 @@ import {
   IconLink,
 } from "../style";
 
-export default class Sobre extends Component {
+export default class About extends Component {
   render() {
     return (
-      <Container id="sobre">
+      <Container id="about">
         <ProfileImage src={profile} alt="it's me"></ProfileImage>
         <MyName>Eduardo da Silva</MyName>
         <ShortText center>{textsAndConfigs.sobreMimText}</ShortText>
