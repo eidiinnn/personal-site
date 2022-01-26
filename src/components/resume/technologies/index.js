@@ -13,7 +13,7 @@ import {
 
 import { Container, ContainerSubtitle, IconListUl, IconsListLi } from "../../../style";
 
-export default class Tecnologias extends Component {
+export default class Technologies extends Component {
   render() {
     return (
       <Container noPadding>
