@@ -1,4 +1,4 @@
-import Github from "../../components/portfolio/repositoriesList/githubAPI/github";
+import Github from "../../components/resume/repositoriesList/githubAPI/github";
 
 test("getInfoOfRepositoriesList get details about the repository", () => {
   return Github.createRepositoriesWithDetailsList("eidiinnn", ["Personal-website"]).then(

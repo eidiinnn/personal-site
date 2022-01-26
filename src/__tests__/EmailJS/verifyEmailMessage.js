@@ -1,4 +1,4 @@
-import Email from "../../components/contato/sendEmail";
+import Email from "../../components/contact/sendEmail";
 
 test("if verifyEmailMessage detect an empty string", () => {
   const emailConst = new Email("teste@teste.com", "");
