@@ -386,11 +386,16 @@ export const PdfResumeContainer = styled.div`
   border-width: 2px;
   border-color: ${blueColor};
   border-radius: 15px;
+
+  &:hover {
+    border-color: ${pinkColor};
+  }
 `;
 
 export const PdfResumeContainerIcon = styled.div`
   font-size: 40px;
-  margin: 5px;
+  display: flex;
+  align-items: center;
 `;
 
 export const ContactForm = styled.form`
