@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import CreateRepositoriesList from "./repositoriesList/createRepositoriesList";
-import Tecnologias from "./tecnologias/";
+import Tecnologias from "./technologies/";
 import { Container, ContainerTitle } from "../../style";
 
-export default class Portfolio extends Component {
+export default class Resume extends Component {
   render() {
     return (
-      <Container id="portfolio">
+      <Container id="resume">
         <ContainerTitle>Portfólio</ContainerTitle>
         <CreateRepositoriesList />
         <Tecnologias />

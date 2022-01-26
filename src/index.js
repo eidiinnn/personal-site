@@ -2,21 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { GlobalStyle } from "./style";
 
-import Menu from "./components/menu";
+import Navbar from "./components/navbar";
 import Header from "./components/header";
-import Sobre from "./components/sobre";
-import Portfolio from "./components/portfolio/";
-import Contato from "./components/contato";
+import About from "./components/about";
+import Resume from "./components/resume/";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Menu />
+    <Navbar />
     <Header />
-    <Sobre />
-    <Portfolio />
-    <Contato />
+    <About />
+    <Resume />
+    <Contact />
     <Footer />
   </React.StrictMode>,
   document.getElementById("root")

@@ -10,7 +10,7 @@ import {
   ContactTextArea,
 } from "../../style";
 
-export default class Contato extends Component {
+export default class Contact extends Component {
   email = (event) => {
     event.preventDefault();
     const newEmailToSend = new Email(
@@ -24,7 +24,7 @@ export default class Contato extends Component {
 
   render() {
     return (
-      <Container id="contato">
+      <Container id="contact">
         <ContainerTitle>Contato</ContainerTitle>
         <ContactForm id="form" onSubmit={this.email}>
           <ContactLabel>Email:</ContactLabel>
