@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
-  "homepage": "https://eidiinnn.github.io/Personal-website",
+  "homepage": "https://eduardosilva.online/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo eduardosilva.online > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
