@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import BackTopTop from "./backToTop";
-import "./footer.css";
+import { FooterContainer } from "../../style";
 
 export default class Footer extends Component {
   render() {
     return (
-      <section className="footer-section">
+      <FooterContainer>
         <p>{"Copyright (c) 2021 Eduardo da Silva"}</p>
         <BackTopTop />
-      </section>
+      </FooterContainer>
     );
   }
 }
