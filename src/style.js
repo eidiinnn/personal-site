@@ -371,6 +371,33 @@ export const ResumeListErrorText = styled.p`
   color: ${whiteColor};
 `;
 
+export const PdfResumeContainer = styled.div`
+  max-width: auto;
+  padding: 5px;
+  margin: 15px 0px 25px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: ${whiteColor};
+  border: solid;
+  border-width: 2px;
+  border-color: ${blueColor};
+  border-radius: 15px;
+
+  &:hover {
+    border-color: ${pinkColor};
+  }
+`;
+
+export const PdfResumeContainerIcon = styled.div`
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+`;
+
 export const ContactForm = styled.form`
   grid-row: 2;
   width: 500px;
