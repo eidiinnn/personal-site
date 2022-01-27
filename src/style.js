@@ -89,7 +89,7 @@ export const NavMenu = styled.nav`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 5px 10px 5px;
   }
 `;
 
@@ -137,7 +137,10 @@ export const Header = styled.header`
   height: 90vh;
   position: relative;
   background: ${darkBlueColor};
-  background-image: linear-gradient(rgba(34, 33, 44, 0.822), rgba(34, 33, 44, 0.925)),
+  background-image: linear-gradient(
+      rgba(34, 33, 44, 0.822),
+      rgba(34, 33, 44, 0.925)
+    ),
     url(${codeImage});
   background-position: center;
   background-size: cover;
@@ -151,7 +154,7 @@ export const Header = styled.header`
   @media only screen and (max-width: 725px) {
     height: 70vh !important;
     display: grid;
-    padding: 10px;
+    padding: 20px;
   }
 `;
 
@@ -196,7 +199,7 @@ export const Container = styled.section`
   flex-direction: column;
 
   @media only screen and (max-width: 480px) {
-    padding: ${(props) => (props.noPadding ? "10px" : "100px 5px 5px 5px")};
+    padding: ${(props) => (props.noPadding ? "0px" : "100px 20px 20px 20px")};
   }
 `;
 
@@ -463,7 +466,7 @@ export const FooterContainer = styled.section`
   justify-content: space-between;
   align-items: center;
   margin-top: 100px;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 20px 0px 20px;
 `;
 
 export const BackToTopCircle = styled.div`
