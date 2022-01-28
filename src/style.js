@@ -383,7 +383,7 @@ export const PdfResumeContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   color: ${whiteColor};
   border: solid;
   border-width: 2px;
@@ -398,6 +398,7 @@ export const PdfResumeContainer = styled.div`
 export const PdfResumeContainerIcon = styled.div`
   font-size: 40px;
   display: flex;
+  margin-right: 5px;
   align-items: center;
 `;
 
