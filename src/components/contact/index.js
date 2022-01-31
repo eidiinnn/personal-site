@@ -14,6 +14,7 @@ export default class Contact extends Component {
   email = (event) => {
     event.preventDefault();
     const newEmailToSend = new Email(
+      event.target.name.value,
       event.target.email.value,
       event.target.message.value
     );
@@ -27,6 +28,8 @@ export default class Contact extends Component {
       <Container id="contact">
         <ContainerTitle>Contato</ContainerTitle>
         <ContactForm id="form" onSubmit={this.email}>
+          <ContactLabel>Nome:</ContactLabel>
+          <ContactInput id="name" type="text"></ContactInput>
           <ContactLabel>Email:</ContactLabel>
           <ContactInput id="email" type="email"></ContactInput>
           <ContactLabel>Mensagem:</ContactLabel>

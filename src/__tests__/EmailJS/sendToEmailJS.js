@@ -1,7 +1,7 @@
 import Email from "../../components/contact/sendEmail";
 
 test("normal email send process", () => {
-  const emailConst = new Email("test@test.com", "message");
+  const emailConst = new Email("test", "test@test.com", "message");
   return emailConst
     .sendToEmailJS()
     .then((response) => {
@@ -14,7 +14,7 @@ test("normal email send process", () => {
 
 test("if detect a problem in the service key", () => {
   process.env.REACT_APP_SERVICE = "qwerty";
-  const emailConst = new Email("test@test.com", "message");
+  const emailConst = new Email("test", "test@test.com", "message");
   return emailConst
     .sendToEmailJS()
     .then(() => {

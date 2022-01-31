@@ -1,7 +1,8 @@
 import emailjs from "emailjs-com";
 
 export default class Email {
-  constructor(email, message) {
+  constructor(name, email, message) {
+    this.name = name;
     this.email = email;
     this.message = message;
     this.sentReturnMessage = "Enviado";
@@ -10,14 +11,16 @@ export default class Email {
       "Mensagem não enviada. Meu email: eduardosilva.pn@gmail.com";
 
     this.clientEmailMessageObject = {
-      from_name: this.email,
+      name: this.name,
+      email: this.email,
       message: this.message,
     };
   }
 
   async sendEmail() {
     return new Promise((resolve) => {
-      if (!this.verifyEmailMessage()) return resolve(this.returnVerifyNotPassed);
+      if (!this.verifyEmailMessage())
+        return resolve(this.returnVerifyNotPassed);
       this.sendToEmailJS()
         .then(() => {
           resolve(this.sentReturnMessage);
@@ -47,7 +50,7 @@ export default class Email {
   }
 
   verifyEmailMessage() {
-    if (!this.email || !this.message) return false;
+    if (!this.name || !this.email || !this.message) return false;
     else return true;
   }
 }
