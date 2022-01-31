@@ -253,6 +253,7 @@ export const ProfileImage = styled.img`
 export const MyName = styled.h3`
   font-size: 25px;
   color: ${blueColor};
+  text-align: center;
   font-weight: 700;
   letter-spacing: 0.2em;
   margin: 15px;
@@ -351,7 +352,7 @@ export const ResumeListClockIcon = styled.div`
 
 export const ResumeListText = styled.p`
   color: ${whiteColor};
-  text-align: justify;
+  text-align: left;
 `;
 
 export const ResumeListErrorContainer = styled.div`
