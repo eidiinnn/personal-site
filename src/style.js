@@ -421,7 +421,7 @@ export const ContactInput = styled.input`
   height: 25px;
   border-radius: 7px;
   border: solid;
-  border-color: ${blueColor};
+  border-color: ${whiteColor};
 `;
 
 export const ContactTextArea = styled.textarea`
@@ -429,7 +429,7 @@ export const ContactTextArea = styled.textarea`
   height: 200px;
   border-radius: 7px;
   border: solid;
-  border-color: ${blueColor};
+  border-color: ${whiteColor};
 `;
 
 export const ContactSubmit = styled.input`
@@ -453,7 +453,7 @@ export const ContactSubmit = styled.input`
 `;
 
 export const ContactLabel = styled.label`
-  color: ${whiteColor};
+  color: ${blueColor};
   margin-bottom: 2px;
 `;
 
