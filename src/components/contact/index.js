@@ -27,6 +27,8 @@ export default class Contact extends Component {
       <Container id="contact">
         <ContainerTitle>Contato</ContainerTitle>
         <ContactForm id="form" onSubmit={this.email}>
+          <ContactLabel>Nome:</ContactLabel>
+          <ContactInput id="email" type="text"></ContactInput>
           <ContactLabel>Email:</ContactLabel>
           <ContactInput id="email" type="email"></ContactInput>
           <ContactLabel>Mensagem:</ContactLabel>
