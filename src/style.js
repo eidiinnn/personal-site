@@ -390,6 +390,7 @@ export const PdfResumeContainer = styled.div`
   border-width: 2px;
   border-color: ${blueColor};
   border-radius: 15px;
+  transition-duration: 700ms;
 
   &:hover {
     border-color: ${pinkColor};
