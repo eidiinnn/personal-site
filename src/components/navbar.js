@@ -8,7 +8,9 @@ export default class Navbar extends Component {
         <NavTitle>&lt;Eduardo&nbsp;/&gt;</NavTitle>
         <NavUl>
           <NavLi>
-            <NavLink href="#home">/Início/</NavLink>
+            <NavLink active href="#home">
+              /Início/
+            </NavLink>
           </NavLi>
           <NavLi>
             <NavLink href="#about">/Sobre/</NavLink>
