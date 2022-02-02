@@ -119,8 +119,8 @@ export const NavLi = styled.li`
 `;
 
 export const NavLink = styled.a`
-  color: ${whiteColor};
-  font-weight: 400;
+  color: ${(props) => (props.active ? blueColor : whiteColor)};
+  font-weight: 700;
   font-size: 15px;
 
   &:hover {
