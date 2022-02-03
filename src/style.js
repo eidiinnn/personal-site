@@ -153,7 +153,6 @@ export const Header = styled.header`
 
   @media only screen and (max-width: 725px) {
     height: 70vh !important;
-    display: grid;
     padding: 20px;
   }
 `;
