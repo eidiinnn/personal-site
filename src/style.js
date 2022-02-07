@@ -305,7 +305,7 @@ export const ResumeListUl = styled.ul`
   padding: 0px;
 `;
 
-export const ResumeListLi = styled.ul`
+export const ResumeListLi = styled.li`
   width: 200px;
   height: 200px;
   margin: 10px 20px 10px 20px;
