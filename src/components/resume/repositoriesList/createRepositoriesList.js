@@ -32,6 +32,6 @@ export default class CreateRepositoriesList extends Component {
         </>
       );
 
-    return <>{createHtmlList.create(this.state.repositoriesList.list)};</>;
+    return <>{createHtmlList.create(this.state.repositoriesList.list)}</>;
   }
 }
