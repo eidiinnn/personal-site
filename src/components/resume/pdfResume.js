@@ -12,7 +12,7 @@ export default class PdfResume extends Component {
           <PdfResumeContainerIcon>
             <VscFilePdf />
           </PdfResumeContainerIcon>
-          Portfólio em PDF
+          Currículo em PDF
         </PdfResumeContainer>
       </a>
     );

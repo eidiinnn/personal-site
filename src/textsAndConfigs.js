@@ -3,5 +3,5 @@ export const textsAndConfigs = {
   headerText:
     "“Medir o progresso da programação por linhas de código é como medir o progresso da construção de aeronaves em termos de peso.” -Bill Gates",
   aboutMeText:
-    "Tenho 23 anos e sou apaixonado por tecnologia, gosto muito de aprender coisas novas e sempre me disponho a isso, tenho experiência em NodeJS, MongoDB, API, React entre outros.",
+    "Sou um desenvolvedor Front-end iniciando na carreira e com vontade de fazer diferença no mundo  através da programação.",
 };
