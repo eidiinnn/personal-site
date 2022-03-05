@@ -10,8 +10,8 @@ export default class Resume extends Component {
       <Container id="resume">
         <ContainerTitle>Portfólio</ContainerTitle>
         <CreateRepositoriesList />
-        <PdfResume />
         <Technologies />
+        <PdfResume />
       </Container>
     );
   }
