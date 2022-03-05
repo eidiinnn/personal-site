@@ -26,7 +26,7 @@ export default class Technologies extends Component {
         <IconListUl>
           <IconsListLi>
             <FaJsSquare />
-            <IconsTitle>Javascript</IconsTitle>
+            <IconsTitle>JavaScript</IconsTitle>
           </IconsListLi>
           <IconsListLi>
             <FaReact />
