@@ -214,10 +214,10 @@ export const ContainerTitle = styled.h1`
 export const ContainerSubtitle = styled.h2`
   grid-row: 1;
   margin: 0px;
-  padding: 30px 0px 20px 0px;
+  padding: 70px 0px 10px 0px;
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   color: ${blueColor};
 `;
 
@@ -289,9 +289,18 @@ export const IconListUl = styled.ul`
   padding: 0px;
 `;
 export const IconsListLi = styled.li`
-  margin: 10px;
+  margin: 15px;
   color: ${whiteColor};
   font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const IconsTitle = styled.h1`
+  margin: 0px;
+  font-size: 18px;
+  margin-top: 4px;
+  font-weight: 400;
 `;
 
 export const ResumeListUl = styled.ul`
@@ -377,7 +386,7 @@ export const ResumeListErrorText = styled.p`
 export const PdfResumeContainer = styled.div`
   max-width: auto;
   padding: 5px;
-  margin: 15px 0px 25px 0px;
+  margin: 25px 0px 25px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
