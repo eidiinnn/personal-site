@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { DiMongodb } from "react-icons/di";
+import { SiRedux } from "react-icons/si";
 import {
   FaReact,
   FaJsSquare,
-  FaNode,
   FaDocker,
   FaGitAlt,
   FaFigma,
@@ -11,7 +10,13 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-import { Container, ContainerSubtitle, IconListUl, IconsListLi } from "../../../style";
+import {
+  Container,
+  ContainerSubtitle,
+  IconListUl,
+  IconsListLi,
+  IconsTitle,
+} from "../../../style";
 
 export default class Technologies extends Component {
   render() {
@@ -20,31 +25,36 @@ export default class Technologies extends Component {
         <ContainerSubtitle>Tecnologias que eu sei</ContainerSubtitle>
         <IconListUl>
           <IconsListLi>
-            <FaJsSquare title="JavaScript" />
+            <FaJsSquare />
+            <IconsTitle>JavaScript</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <FaNode title="NodeJs" />
+            <FaReact />
+            <IconsTitle>React</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <FaReact title="React" />
+            <SiRedux />
+            <IconsTitle>Redux</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <DiMongodb title="MongoDB" />
+            <FaGitAlt />
+            <IconsTitle>Git</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <FaGitAlt title="Git" />
+            <FaGithub />
+            <IconsTitle>GitHub</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <FaGithub title="GitHub" />
+            <FaDocker />
+            <IconsTitle>Docker</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <FaDocker title="Docker" />
+            <FaFigma />
+            <IconsTitle>Figma</IconsTitle>
           </IconsListLi>
           <IconsListLi>
-            <FaFigma title="Figma" />
-          </IconsListLi>
-          <IconsListLi>
-            <FaLinux title="Linux" />
+            <FaLinux />
+            <IconsTitle>Linux</IconsTitle>
           </IconsListLi>
         </IconListUl>
       </Container>
