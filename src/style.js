@@ -461,11 +461,6 @@ export const ContactSubmit = styled.input`
   }
 `;
 
-export const ContactLabel = styled.label`
-  color: ${blueColor};
-  margin-bottom: 2px;
-`;
-
 export const FooterContainer = styled.section`
   font-family: "Roboto";
   font-weight: 400;

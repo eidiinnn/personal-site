@@ -4,7 +4,6 @@ import {
   Container,
   ContainerTitle,
   ContactForm,
-  ContactLabel,
   ContactSubmit,
   ContactInput,
   ContactTextArea,
