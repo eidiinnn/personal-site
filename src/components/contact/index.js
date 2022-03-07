@@ -28,12 +28,16 @@ export default class Contact extends Component {
       <Container id="contact">
         <ContainerTitle>Contato</ContainerTitle>
         <ContactForm id="form" onSubmit={this.email}>
-          <ContactLabel>Nome:</ContactLabel>
-          <ContactInput id="name" type="text"></ContactInput>
-          <ContactLabel>Email:</ContactLabel>
-          <ContactInput id="email" type="email"></ContactInput>
-          <ContactLabel>Mensagem:</ContactLabel>
-          <ContactTextArea id="message"></ContactTextArea>
+          <ContactInput id="name" type="text" placeholder="Nome"></ContactInput>
+          <ContactInput
+            id="email"
+            type="email"
+            placeholder="Email"
+          ></ContactInput>
+          <ContactTextArea
+            id="message"
+            placeholder="Mensagem"
+          ></ContactTextArea>
           <ContactSubmit type="submit" value="Enviar"></ContactSubmit>
         </ContactForm>
       </Container>
