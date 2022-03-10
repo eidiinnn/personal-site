@@ -49,4 +49,9 @@ export const IconLink = styled.a`
   font-size: 1.7rem;
   padding-right: 0.2rem;
   color: ${normalTextColor};
+  transition: 1000ms;
+
+  &:hover {
+    color: ${secondaryColor};
+  }
 `;
