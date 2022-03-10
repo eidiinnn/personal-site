@@ -9,9 +9,9 @@ export const Container = styled.section`
   font-family: "Roboto";
   max-width: 1200px;
   height: min-content;
-  margin: 0 auto;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
+  margin: ${(props) => (props.noMargin ? "0" : "0 auto")};
+  margin-top: ${(props) => (props.noMargin ? "0" : "12rem")};
+  margin-bottom: ${(props) => (props.noMargin ? "0" : "12rem")};
   justify-content: center;
   align-items: left;
   display: flex;

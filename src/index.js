@@ -15,7 +15,6 @@ ReactDOM.render(
     <About />
     <Portfolio />
     <Contact />
-    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );
