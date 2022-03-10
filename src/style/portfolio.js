@@ -29,7 +29,7 @@ export const ProjectListLi = styled.li`
 
   border-top: 4px solid ${secondaryColor};
   padding: 2.5rem;
-  box-shadow: 5px 8px 21px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.12);
   background-color: ${DarkBackgroundColor};
   transition-duration: 700ms;
 
@@ -93,7 +93,7 @@ export const PdfResumeContainer = styled.div`
 
   width: 400px;
   background-color: ${DarkBackgroundColor};
-  box-shadow: 5px 8px 21px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.12);
   border-top: 4px solid ${secondaryColor};
   transition-duration: 700ms;
 

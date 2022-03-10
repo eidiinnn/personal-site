@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const primaryColor = "#ff79c6";
 export const secondaryColor = "#36fcff";
 export const normalTextColor = "#b2b2b2";
-export const DarkBackgroundColor = "#13121a";
+export const DarkBackgroundColor = "#1b1a25";
 
 export const Container = styled.section`
   font-family: "Roboto";
