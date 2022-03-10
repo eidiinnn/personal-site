@@ -27,8 +27,8 @@ export const textsAndConfigs = {
     {
       name: "My Pet Picture",
       tech: "NodeJS MongoDB Ejs Express Docker",
-      description: `Exibe uma foto aletória de um pet, com a opção de fazer upload de uma nova foto para e ela
-      irá aparecer junto com as demais.`,
+      description: `Exibe uma foto aleatória de um pet, com a opção de fazer upload de uma nova foto para e 
+      ela irá aparecer com as demais.`,
       github: "https://github.com/eidiinnn/My-pet-picture",
       link: null,
     },
