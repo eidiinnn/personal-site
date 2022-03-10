@@ -79,6 +79,11 @@ export const ExternalLinksIcons = styled.a`
   font-size: 2rem;
   color: ${normalTextColor};
   margin-left: 0.5rem;
+  transition: 1000ms;
+
+  &:hover {
+    color: ${secondaryColor};
+  }
 `;
 
 export const PdfResumeContainer = styled.div`
@@ -92,6 +97,11 @@ export const PdfResumeContainer = styled.div`
   color: ${normalTextColor};
 
   background-color: ${DarkBackgroundColor};
+  transition: 1000ms;
+
+  &:hover {
+    color: ${secondaryColor};
+  }
 `;
 
 export const PdfResumeContainerIcon = styled.div`
