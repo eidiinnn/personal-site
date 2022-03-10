@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { textsAndConfigs } from "../../textsAndConfigs";
+import PdfResume from "./pdfResume";
 import {
   ProjectListUl,
   ProjectListLi,
@@ -55,6 +56,9 @@ export default class Projects extends Component {
             </a>
           );
         })}
+        <ProjectListLi center>
+          <PdfResume />
+        </ProjectListLi>
       </ProjectListUl>
     );
   };

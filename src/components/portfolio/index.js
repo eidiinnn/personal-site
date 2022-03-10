@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PdfResume from "./pdfResume";
 import CreateHtmlList from "./projects";
 import {
   Container,
@@ -19,7 +18,6 @@ export default class Portfolio extends Component {
           <TextHighlight>Fox Home</TextHighlight>.
         </CategoryText>
         <CreateHtmlList />
-        <PdfResume />
       </Container>
     );
   }

@@ -21,7 +21,7 @@ export const ProjectListUl = styled.ul`
 export const ProjectListLi = styled.li`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: ${(props) => (props.center ? "center" : "space-between")};
 
   width: 400px;
   height: 230px;
@@ -83,32 +83,21 @@ export const ExternalLinksIcons = styled.a`
 
 export const PdfResumeContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 700;
   color: ${normalTextColor};
 
-  width: 400px;
   background-color: ${DarkBackgroundColor};
-  box-shadow: 5px 5px 7px 5px rgba(0, 0, 0, 0.12);
-  border-top: 4px solid ${secondaryColor};
-  transition-duration: 700ms;
-
-  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
-  margin: 0 auto;
-  margin-top: 3.5rem;
-
-  &:hover {
-    box-shadow: 0px 0px 52px -6px rgba(50, 47, 74, 1);
-  }
 `;
 
 export const PdfResumeContainerIcon = styled.div`
   display: flex;
-  margin-right: 5px;
+  margin-bottom: 1rem;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 5.5rem;
+  color: ${primaryColor};
 `;
