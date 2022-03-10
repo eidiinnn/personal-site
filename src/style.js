@@ -11,6 +11,7 @@ const darkBlueColor = "#22212c";
 const pinkColor = "#ff79c6";
 const blueColor = "#36fcff";
 const whiteColor = "#fdfdfd";
+const whiteSecondColor = "#e1e1e1";
 const greenColor = "#83f59e";
 const footerBackgroundColor = "#131215";
 
@@ -189,13 +190,15 @@ export const HeaderRoleParaBaixo = styled.div`
 
 export const Container = styled.section`
   font-family: "Roboto";
-  max-width: 100%;
+  max-width: 1200px;
   height: min-content;
-  padding-top: ${(props) => (props.noPadding ? "0px" : "100px")};
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(props) => (props.row ? "row" : "column")};
 
   @media only screen and (max-width: 480px) {
     padding: ${(props) => (props.noPadding ? "0px" : "100px 20px 20px 20px")};
@@ -224,11 +227,11 @@ export const ContainerSubtitle = styled.h2`
 export const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 5px;
+  margin-top: 0.5rem;
 `;
 
 export const IconLink = styled.a`
-  font-size: 25px;
+  font-size: 1.7rem;
   padding: 2px;
   color: ${whiteColor};
 
@@ -239,9 +242,10 @@ export const IconLink = styled.a`
 `;
 
 export const ProfileImage = styled.img`
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: 5rem;
+  align-self: center;
 
   @media only screen and (max-width: 480px) {
     width: 150px;
@@ -250,30 +254,38 @@ export const ProfileImage = styled.img`
 `;
 
 export const MyName = styled.h3`
-  font-size: 25px;
+  font-size: 1.2rem;
   color: ${blueColor};
-  text-align: center;
+  text-align: left;
   font-weight: 700;
-  letter-spacing: 0.2em;
-  margin: 15px;
+  margin: 0;
 
   @media only screen and (max-width: 480px) {
     font-size: 20px;
   }
 `;
 
+export const MyNameBigText = styled.p`
+  color: ${pinkColor};
+  font-size: 3.5rem;
+  line-height: 3.2rem;
+  margin: 0;
+`;
+
 export const ShortText = styled.p`
-  color: ${whiteColor};
-  font-weight: 300;
-  max-width: 400px;
-  margin: 5px;
+  color: ${whiteSecondColor};
+  font-weight: 400;
+  max-width: 500px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
   text-align: ${(props) => (props.center ? "center" : "left")};
 
   @media only screen and (max-width: 480px) {
     max-width: 100vh;
     align-self: center;
     text-align: center;
-    margin: 0px;
+    margin: 0;
   }
 `;
 
@@ -289,7 +301,7 @@ export const IconListUl = styled.ul`
   padding: 0px;
 `;
 export const IconsListLi = styled.li`
-  margin: 15px;
+  margin: 5rem;
   color: ${whiteColor};
   font-size: 40px;
   display: flex;
