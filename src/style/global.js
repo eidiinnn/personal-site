@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
+import RobotoRegular from "../fonts/Roboto-Regular.ttf";
+import RobotoBold from "../fonts/Roboto-Bold.ttf";
+import RobotoLight from "../fonts/Roboto-Light.ttf";
 
 export const primaryColor = "#ff79c6";
 export const secondaryColor = "#36fcff";
 export const normalTextColor = "#b2b2b2";
+export const backgroundColor = "#22212c";
 export const DarkBackgroundColor = "#1b1a25";
 
 export const Container = styled.section`
@@ -44,3 +50,39 @@ export const TextHighlight = styled.b`
   color: ${secondaryColor};
   margin: 0;
 `;
+
+export const GlobalStyle = createGlobalStyle` 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: ${backgroundColor};
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(${RobotoRegular});
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(${RobotoBold});
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(${RobotoLight});
+    font-weight: 300;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}`;
