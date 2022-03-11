@@ -36,24 +36,17 @@ export default class Projects extends Component {
       <ProjectListUl>
         {this.state.projects.map((repository) => {
           return (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              key={repository.name}
-              href={repository.html_url}
-            >
-              <ProjectListLi>
-                <div>
-                  <ProjectListTitle>{repository.name}</ProjectListTitle>
-                  <Tech>{repository.tech}</Tech>
-                  <Text>{repository.description}</Text>
-                </div>
-                <ExternalLinks>
-                  {this.createExternalLinks(repository.github, FaGithub)}
-                  {this.createExternalLinks(repository.link, FaExternalLinkAlt)}
-                </ExternalLinks>
-              </ProjectListLi>
-            </a>
+            <ProjectListLi>
+              <div>
+                <ProjectListTitle>{repository.name}</ProjectListTitle>
+                <Tech>{repository.tech}</Tech>
+                <Text>{repository.description}</Text>
+              </div>
+              <ExternalLinks>
+                {this.createExternalLinks(repository.github, FaGithub)}
+                {this.createExternalLinks(repository.link, FaExternalLinkAlt)}
+              </ExternalLinks>
+            </ProjectListLi>
           );
         })}
         <ProjectListLi center>

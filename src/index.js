@@ -6,6 +6,7 @@ import Menu from "./components/menu";
 import About from "./components/about";
 import Portfolio from "./components/portfolio/";
 import Contact from "./components/contact";
+import Aside from "./components/aside";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
     <About />
     <Portfolio />
     <Contact />
+    <Aside />
   </React.StrictMode>,
   document.getElementById("root")
 );

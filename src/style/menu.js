@@ -23,6 +23,10 @@ export const MenuContainer = styled.menu`
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
   font-family: "Roboto";
+
+  @media screen and (max-width: 516px) {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`
@@ -43,31 +47,6 @@ export const NavLink = styled.a`
   font-size: 1rem;
   color: ${normalTextColor};
   padding: 0.5rem;
-  transition: 1000ms;
-
-  &:hover {
-    color: ${secondaryColor};
-  }
-`;
-
-export const LinkIconContainers = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  padding-right: 1rem;
-  padding-bottom: 4.5rem;
-  margin: 0.5rem;
-  box-sizing: border-box;
-  border-right: solid 2px ${normalTextColor};
-`;
-
-export const IconsLinks = styled.a`
-  font-size: 1.7rem;
-  color: ${normalTextColor};
-  margin-bottom: 0.5rem;
   transition: 1000ms;
 
   &:hover {

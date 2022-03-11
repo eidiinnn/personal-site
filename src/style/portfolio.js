@@ -16,6 +16,10 @@ export const ProjectListUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 664px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectListLi = styled.li`
@@ -39,6 +43,11 @@ export const ProjectListLi = styled.li`
   &:hover {
     box-shadow: 0px 0px 52px -6px rgba(50, 47, 74, 1);
   }
+
+  @media screen and (max-width: 514px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const ProjectListTitle = styled.h1`
@@ -57,6 +66,10 @@ export const Tech = styled.p`
   font-weight: 400;
   margin: 0;
   font-size: 1.1rem;
+
+  @media screen and (max-width: 514px) {
+    max-width: 100%;
+  }
 `;
 
 export const Text = styled.p`
@@ -65,6 +78,11 @@ export const Text = styled.p`
   font-size: 1rem;
   font-weight: 400;
   width: 380px;
+
+  @media screen and (max-width: 514px) {
+    width: 100%;
+    height: max-content;
+  }
 `;
 
 export const ExternalLinks = styled.div`
@@ -76,7 +94,7 @@ export const ExternalLinks = styled.div`
 `;
 
 export const ExternalLinksIcons = styled.a`
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: ${normalTextColor};
   margin-left: 0.5rem;
   transition: 1000ms;

@@ -10,14 +10,15 @@ import {
   ProfileImage,
   IconContainer,
   IconLink,
+  TextContainer,
 } from "../style/about";
 import { Container } from "../style/global";
 
 export default class About extends Component {
   render() {
     return (
-      <Container row id="about">
-        <Container>
+      <Container row vh100 alignCenter noMargin reverseColumn id="about">
+        <TextContainer>
           <Title>
             Olá, Meu nome é<br />
             <TitleBiggerText>
@@ -34,7 +35,7 @@ export default class About extends Component {
               <FaLinkedin className="sobre-icons" />
             </IconLink>
           </IconContainer>
-        </Container>
+        </TextContainer>
 
         <ProfileImage src={profile} alt="it's me"></ProfileImage>
       </Container>

@@ -1,12 +1,21 @@
 import styled from "styled-components";
 import { primaryColor, secondaryColor, normalTextColor } from "./global";
 
+export const TextContainer = styled.article`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Title = styled.h1`
   font-size: 1.2rem;
   text-align: left;
   font-weight: 700;
   color: ${secondaryColor};
   margin: 0;
+
+  @media only screen and (max-width: 1206px) {
+    font: 1rem;
+  }
 `;
 
 export const TitleBiggerText = styled.p`
@@ -14,6 +23,16 @@ export const TitleBiggerText = styled.p`
   font-size: 3.5rem;
   line-height: 3.2rem;
   margin: 0;
+
+  @media only screen and (max-width: 1206px) {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  @media screen and (max-width: 472px) {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -33,9 +52,11 @@ export const ProfileImage = styled.img`
   margin-left: 5rem;
   align-self: center;
 
-  @media only screen and (max-width: 480px) {
-    width: 150px;
+  @media only screen and (max-width: 1206px) {
+    width: 55%;
     height: auto;
+    margin: 0;
+    align-self: center;
   }
 `;
 

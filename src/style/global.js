@@ -12,26 +12,41 @@ export const backgroundColor = "#22212c";
 export const DarkBackgroundColor = "#1b1a25";
 
 export const Container = styled.section`
-  font-family: "Roboto";
-  max-width: 1200px;
-  height: min-content;
-  margin: ${(props) => (props.noMargin ? "0" : "0 auto")};
-  margin-top: ${(props) => (props.noMargin ? "0" : "12rem")};
-  margin-bottom: ${(props) => (props.noMargin ? "0" : "12rem")};
-  justify-content: center;
-  align-items: left;
   display: flex;
   flex-direction: ${(props) => (props.row ? "row" : "column")};
+  justify-content: center;
+  align-items: ${(props) => (props.alignCenter ? "center" : "left")};
+  height: ${(props) => (props.vh100 ? "100vh" : "min-content")};
+  box-sizing: border-box;
+  max-width: 1200px;
+
+  font-family: "Roboto";
+
+  margin: 0 auto;
+  margin-top: ${(props) => (props.noMargin ? "0" : "12rem")};
+  margin-bottom: ${(props) => (props.noMargin ? "0" : "12rem")};
+  padding: 6rem 1rem 0rem 1rem;
+
+  @media screen and (max-width: 1206px) {
+    flex-direction: ${(props) =>
+      props.reverseColumn ? "column-reverse" : "column"};
+    margin: 5rem 0rem 5rem 0rem;
+    height: min-content !important;
+  }
 `;
 
 export const CategoryTitle = styled.h1`
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: ${primaryColor};
   text-align: left;
   font-weight: 700;
 
   margin: 0;
   padding-bottom: 0.1rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const CategoryText = styled.p`
@@ -43,6 +58,10 @@ export const CategoryText = styled.p`
   max-width: 700px;
   margin-bottom: 5rem;
   padding-left: 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 `;
 
 export const TextHighlight = styled.b`
@@ -85,4 +104,27 @@ a:hover {
 }
 a:active {
   text-decoration: none;
-}`;
+}
+
+@-webkit-keyframes menuHidden {
+	0% {
+    visibility: visible;
+	}
+	100% { 
+		top: -200px;
+    visibility: hidden;
+	}
+}
+
+@-webkit-keyframes menuvisible {
+	0% {
+    top: -200px;
+    visibility: hidden;
+	}
+	100% { 
+		top: 0px;
+    visibility: visible;
+	}
+}
+
+`;

@@ -10,7 +10,10 @@ export const Form = styled.form`
   align-self: center;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+
+  @media screen and (max-width: 664px) {
+    width: 100%;
+  }
 `;
 
 export const Icon = styled.div`
@@ -33,6 +36,7 @@ export const TextArea = styled.textarea`
   background-color: ${DarkBackgroundColor};
   color: ${normalTextColor};
   width: 100%;
+  border: 0;
   margin: 0 0 1rem 0;
   padding: 0.5rem 0.2rem 0.5rem 0.2rem;
   height: 200px;

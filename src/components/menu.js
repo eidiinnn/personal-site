@@ -1,43 +1,29 @@
 import React, { Component } from "react";
-import {
-  MenuContainer,
-  Title,
-  Nav,
-  NavLink,
-  LinkIconContainers,
-  IconsLinks,
-} from "../style/menu";
-
-import { FaGithub, FaWhatsapp, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { MenuContainer, Title, Nav, NavLink } from "../style/menu";
 
 export default class Menu extends Component {
+  componentDidMount() {
+    window.onscroll = this.scrollActions;
+  }
+
+  scrollActions() {
+    const menu = document.getElementById("menu");
+    this.oldScroll > this.scrollY
+      ? (menu.style.animation = "menuvisible 500ms forwards")
+      : (menu.style.animation = "menuHidden 500ms forwards");
+    this.oldScroll = this.scrollY;
+  }
+
   render() {
     return (
-      <>
-        <MenuContainer>
-          <Title>&lt;Eduardo&nbsp;/&gt;</Title>
-          <Nav>
-            <NavLink href="#about">./Sobre/</NavLink>
-            <NavLink href="#resume">./Portfólio/</NavLink>
-            <NavLink href="#contact">./Contato/</NavLink>
-          </Nav>
-        </MenuContainer>
-
-        <LinkIconContainers>
-          <IconsLinks href="www.linkedin.com/in/eduardosilvapn">
-            <FaLinkedinIn />
-          </IconsLinks>
-          <IconsLinks href="https://api.whatsapp.com/send?phone=5548996303675">
-            <FaWhatsapp />
-          </IconsLinks>
-          <IconsLinks href="https://twitter.com/eidiin_">
-            <FaTwitter />
-          </IconsLinks>
-          <IconsLinks href="https://github.com/eidiinnn">
-            <FaGithub />
-          </IconsLinks>
-        </LinkIconContainers>
-      </>
+      <MenuContainer id="menu">
+        <Title>&lt;Eduardo&nbsp;/&gt;</Title>
+        <Nav>
+          <NavLink href="#about">./Sobre/</NavLink>
+          <NavLink href="#resume">./Portfólio/</NavLink>
+          <NavLink href="#contact">./Contato/</NavLink>
+        </Nav>
+      </MenuContainer>
     );
   }
 }
