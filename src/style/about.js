@@ -20,7 +20,7 @@ export const Title = styled.h1`
 
 export const TitleBiggerText = styled.p`
   color: ${primaryColor};
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   line-height: 3.2rem;
   margin: 0;
 
