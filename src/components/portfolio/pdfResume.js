@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { VscFilePdf } from "react-icons/vsc";
 import resumePdfFile from "../../others/Resume.pdf";
 
-import { PdfResumeContainer, PdfResumeContainerIcon } from "../../style";
+import {
+  PdfResumeContainer,
+  PdfResumeContainerIcon,
+} from "../../style/portfolio";
 
 export default class PdfResume extends Component {
   render() {
@@ -12,7 +15,7 @@ export default class PdfResume extends Component {
           <PdfResumeContainerIcon>
             <VscFilePdf />
           </PdfResumeContainerIcon>
-          Currículo em PDF
+          Ver meu currículo em PDF
         </PdfResumeContainer>
       </a>
     );
