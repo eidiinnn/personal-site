@@ -23,7 +23,8 @@ export const Container = styled.section`
   font-family: "Roboto";
 
   margin: 0 auto;
-  margin-top: ${(props) => (props.noMargin ? "0" : "12rem")};
+  margin-top: ${(props) =>
+    props.noMargin || props.noMarginTop ? "0" : "12rem"};
   margin-bottom: ${(props) => (props.noMargin ? "0" : "12rem")};
   padding: 6rem 1rem 0rem 1rem;
 

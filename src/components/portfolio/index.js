@@ -10,7 +10,7 @@ import {
 export default class Portfolio extends Component {
   render() {
     return (
-      <Container id="resume">
+      <Container noMarginTop id="resume">
         <CategoryTitle>&lt;Portfólio /&gt;</CategoryTitle>
         <CategoryText>
           Alguns projetos Pessoais que desenvolvi ou estou desenvolvendo no
