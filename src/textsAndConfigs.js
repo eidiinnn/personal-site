@@ -17,9 +17,9 @@ export const textsAndConfigs = {
     {
       name: "Site Pessoal",
       tech: "React EmailJs Jest styled-components.",
-      description: `Meu site pessoal em React. O site pega uma lista predefinida de projetos e exibe eles no
-      meu portfólio usando dados obtidos a partir da API do Github. Também tem opção de
-      contato por email usando o EmailJs.`,
+      description: `Meu site pessoal, usado para mostrar um pouco sobre mim e meus projetos. Como opção
+      de contato é usada a API do EmailJS para mandar as mensagens para minha caixa de
+      entrada e também é responsivo deixando a navegação mais fácil nos celulares.`,
       github: "https://github.com/eidiinnn/Personal-website",
       link: " https://eduardosilva.online",
     },
