@@ -30,8 +30,8 @@ export const TitleBiggerText = styled.p`
   }
 
   @media screen and (max-width: 472px) {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
   }
 `;
 
