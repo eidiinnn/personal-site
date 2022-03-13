@@ -30,8 +30,8 @@ export const TitleBiggerText = styled.p`
   }
 
   @media screen and (max-width: 472px) {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
   }
 `;
 
@@ -52,7 +52,14 @@ export const ProfileImage = styled.img`
   margin-left: 5rem;
   align-self: center;
 
-  @media only screen and (max-width: 1206px) {
+  @media screen and (max-width: 1206px) {
+    width: 30%;
+    height: auto;
+    margin: 0;
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 603px) {
     width: 55%;
     height: auto;
     margin: 0;
