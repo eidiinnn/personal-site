@@ -117,7 +117,7 @@ a:active {
 	}
 }
 
-@-webkit-keyframes menuvisible {
+@keyframes menuVisible {
 	0% {
     top: -200px;
     visibility: hidden;
@@ -127,5 +127,4 @@ a:active {
     visibility: visible;
 	}
 }
-
 `;
