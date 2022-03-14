@@ -10,8 +10,8 @@ export const LinkIconContainers = styled.div`
   right: 0;
   bottom: 0;
   padding-right: 1rem;
-  padding-bottom: 4.5rem;
-  margin: 0.5rem;
+  padding-bottom: 5.5rem;
+  margin-right: 0.5rem;
   box-sizing: border-box;
   border-right: solid 2px ${normalTextColor};
 

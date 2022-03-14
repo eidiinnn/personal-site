@@ -18,13 +18,14 @@ export const MenuContainer = styled.menu`
   box-sizing: border-box;
   top: 0;
   background-color: ${backgroundColor};
-  padding: 0.5rem 3rem 0.5rem 3rem;
+  padding: 0.5rem 8rem 0.5rem 8rem;
   margin-top: 0;
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
   font-family: "Roboto";
+  animation: menuVisible 1.5s forwards;
 
-  @media screen and (max-width: 516px) {
+  @media screen and (max-width: 737px) {
     flex-direction: column;
   }
 `;
@@ -32,6 +33,13 @@ export const MenuContainer = styled.menu`
 export const Title = styled.h1`
   font-size: 1.5rem;
   color: ${primaryColor};
+  font-weight: 700;
+`;
+
+export const TitleCode = styled.i`
+  margin: 0;
+  font-size: 0.9rem;
+  color: ${normalTextColor};
   font-weight: 700;
 `;
 
