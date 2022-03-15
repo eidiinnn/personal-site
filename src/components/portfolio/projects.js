@@ -36,7 +36,7 @@ export default class Projects extends Component {
       <ProjectListUl>
         {this.state.projects.map((repository) => {
           return (
-            <ProjectListLi>
+            <ProjectListLi key={repository.name}>
               <div>
                 <ProjectListTitle>{repository.name}</ProjectListTitle>
                 <Tech>{repository.tech}</Tech>
