@@ -107,7 +107,20 @@ a:active {
   text-decoration: none;
 }
 
-@-webkit-keyframes menuHidden {
+.profileImageAnimation{
+  align-self: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 603px){
+  .profileImageAnimation{
+    justify-content: left;
+  }
+}
+
+@keyframes menuHidden {
 	0% {
     visibility: visible;
 	}
@@ -124,6 +137,17 @@ a:active {
 	}
 	100% { 
 		top: 0px;
+    visibility: visible;
+	}
+}
+
+@keyframes asideVisible {
+  0% {
+    right: -200px;
+    visibility: hidden;
+	}
+	100% { 
+		right: 0px;
     visibility: visible;
 	}
 }

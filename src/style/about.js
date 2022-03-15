@@ -53,17 +53,17 @@ export const ProfileImage = styled.img`
   align-self: center;
 
   @media screen and (max-width: 1206px) {
-    width: 40%;
+    width: 20%;
     height: auto;
     margin: 0;
     align-self: center;
   }
 
   @media only screen and (max-width: 603px) {
-    width: 75%;
+    width: 30%;
     height: auto;
     margin: 0;
-    align-self: center;
+    align-self: left;
   }
 `;
 

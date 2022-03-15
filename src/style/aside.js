@@ -14,6 +14,8 @@ export const LinkIconContainers = styled.div`
   margin-right: 0.5rem;
   box-sizing: border-box;
   border-right: solid 2px ${normalTextColor};
+  visibility: hidden;
+  animation: asideVisible 1.5s 1s forwards;
 
   @media screen and (max-width: 1136px) {
     border-right: none;
