@@ -23,7 +23,9 @@ export const MenuContainer = styled.menu`
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
   font-family: "Roboto";
-  animation: menuVisible 1.5s forwards;
+  visibility: hidden;
+  animation: menuVisible 1.5s 1s forwards;
+  z-index: 10;
 
   @media screen and (max-width: 737px) {
     flex-direction: column;

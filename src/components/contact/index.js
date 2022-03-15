@@ -9,6 +9,7 @@ import {
   Icon,
 } from "../../style/contact";
 import { Container, CategoryTitle, CategoryText } from "../../style/global";
+import { Fade } from "react-awesome-reveal";
 
 export default class Contact extends Component {
   email = (event) => {
@@ -25,31 +26,33 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <Container id="contact">
-        <CategoryTitle>&lt;Contato /&gt;</CategoryTitle>
-        <CategoryText>
-          Querendo me oferecer um job de Freelancer ou vaga de emprego? Entre em
-          contato comigo e vamos conversar.
-        </CategoryText>
+      <Fade triggerOnce duration={2000} damping={1}>
+        <Container id="contact">
+          <CategoryTitle>&lt;Contato /&gt;</CategoryTitle>
+          <CategoryText>
+            Querendo me oferecer um job de Freelancer ou vaga de emprego? Entre
+            em contato comigo e vamos conversar.
+          </CategoryText>
 
-        <Form id="form" onSubmit={this.email}>
-          <Icon>
-            <FaPaperPlane />
-          </Icon>
-          <InputTextEmail
-            id="name"
-            type="text"
-            placeholder="Nome"
-          ></InputTextEmail>
-          <InputTextEmail
-            id="email"
-            type="email"
-            placeholder="Email"
-          ></InputTextEmail>
-          <TextArea id="message" placeholder="Mensagem"></TextArea>
-          <Submit type="submit" value="Enviar"></Submit>
-        </Form>
-      </Container>
+          <Form id="form" onSubmit={this.email}>
+            <Icon>
+              <FaPaperPlane />
+            </Icon>
+            <InputTextEmail
+              id="name"
+              type="text"
+              placeholder="Nome"
+            ></InputTextEmail>
+            <InputTextEmail
+              id="email"
+              type="email"
+              placeholder="Email"
+            ></InputTextEmail>
+            <TextArea id="message" placeholder="Mensagem"></TextArea>
+            <Submit type="submit" value="Enviar"></Submit>
+          </Form>
+        </Container>
+      </Fade>
     );
   }
 }
