@@ -15,7 +15,7 @@ export default class Portfolio extends Component {
         <Fade triggerOnce duration={2000} damping={1}>
           <CategoryTitle>&lt;Portfólio /&gt;</CategoryTitle>
           <CategoryText>
-            Alguns projetos Pessoais que desenvolvi ou estou desenvolvendo no
+            Alguns projetos pessoais que desenvolvi ou estou desenvolvendo no
             momento. Atualmente estou trabalhando no&nbsp;
             <TextHighlight>Fox Home</TextHighlight>.
           </CategoryText>
