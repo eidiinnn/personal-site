@@ -7,10 +7,11 @@ import {
   backgroundColor,
 } from "./global";
 
-export const MenuContainer = styled.menu`
+export const MenuMain = styled.menu`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
   position: fixed;
@@ -18,7 +19,7 @@ export const MenuContainer = styled.menu`
   box-sizing: border-box;
   top: 0;
   background-color: ${backgroundColor};
-  padding: 1.5rem 8rem 1.5rem 8rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   margin-top: 0;
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
@@ -26,18 +27,26 @@ export const MenuContainer = styled.menu`
   visibility: hidden;
   animation: menuVisible 1.5s 1s forwards;
   z-index: 10;
+`;
 
-  @media screen and (max-width: 737px) {
-    flex-wrap: wrap;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  }
+export const MenuContainer = styled.div`
+  max-width: 1200px;
+  width: 1200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const Title = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: ${primaryColor};
   font-weight: 700;
   margin: 0;
+
+  @media screen and (max-width: 737px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const TitleCode = styled.i`
@@ -60,7 +69,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled.a`
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: ${normalTextColor};
   padding: 0.5rem;
   transition: 1000ms;
@@ -70,7 +79,8 @@ export const NavLink = styled.a`
   }
 
   @media screen and (max-width: 737px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: left;
   }
 `;
 
