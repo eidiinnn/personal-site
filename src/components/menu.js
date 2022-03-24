@@ -1,9 +1,16 @@
 import React, { Component } from "react";
-import { MenuContainer, Title, Nav, NavLink, TitleCode } from "../style/menu";
+import {
+  MenuContainer,
+  Title,
+  Nav,
+  NavLink,
+  TitleCode,
+  AfterNameLink,
+} from "../style/menu";
 
 export default class Menu extends Component {
   componentDidMount() {
-    window.onscroll = this.scrollActions;
+    //window.onscroll = this.scrollActions;
   }
 
   scrollActions() {
@@ -23,9 +30,18 @@ export default class Menu extends Component {
           <TitleCode>&lt;/h1&gt; </TitleCode>
         </Title>
         <Nav>
-          <NavLink href="#about">./Sobre</NavLink>
-          <NavLink href="#resume">./Portfólio</NavLink>
-          <NavLink href="#contact">./Contato</NavLink>
+          <NavLink href="#about">
+            <AfterNameLink>./</AfterNameLink>
+            Sobre
+          </NavLink>
+          <NavLink href="#resume">
+            <AfterNameLink>./</AfterNameLink>
+            Portfólio
+          </NavLink>
+          <NavLink href="#contact">
+            <AfterNameLink>./</AfterNameLink>
+            Contato
+          </NavLink>
         </Nav>
       </MenuContainer>
     );
