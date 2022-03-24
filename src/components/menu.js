@@ -31,7 +31,11 @@ export default class Menu extends Component {
       <>
         {this.state.links.map((item) => {
           return (
-            <NavLink href={item.link} onClick={this.modalAction}>
+            <NavLink
+              key={item.name}
+              href={item.link}
+              onClick={this.modalAction}
+            >
               {item.name}
             </NavLink>
           );
