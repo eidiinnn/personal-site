@@ -1,18 +1,48 @@
 import React, { Component } from "react";
-import { MenuContainer, Title, Nav, NavLink, TitleCode } from "../style/menu";
+import { FaBars, FaRegTimesCircle } from "react-icons/fa";
+import {
+  MenuContainer,
+  Title,
+  Nav,
+  NavLink,
+  TitleCode,
+  MobileMenu,
+  MenuModal,
+  CloseModal,
+} from "../style/menu";
 
 export default class Menu extends Component {
-  componentDidMount() {
-    window.onscroll = this.scrollActions;
-  }
+  modalAction = () => {
+    if (window.innerWidth <= 737)
+      return this.setState({ modalOpen: this.state.modalOpen ? false : true });
+  };
 
-  scrollActions() {
-    const menu = document.getElementById("menu");
-    this.oldScroll > this.scrollY
-      ? (menu.style.animation = "menuVisible 500ms forwards")
-      : (menu.style.animation = "menuHidden 500ms forwards");
-    this.oldScroll = this.scrollY;
-  }
+  state = {
+    modalOpen: false,
+    links: [
+      { name: "Sobre", link: "#about" },
+      { name: "Portfólio", link: "#portfolio" },
+      { name: "Contato", link: "#contact" },
+    ],
+  };
+
+  createNavLinks = () => {
+    return (
+      <>
+        {this.state.links.map((item) => {
+          return (
+            <NavLink
+              key={item.name}
+              href={item.link}
+              onClick={this.modalAction}
+            >
+              {item.name}
+            </NavLink>
+          );
+        })}
+      </>
+    );
+  };
 
   render() {
     return (
@@ -22,11 +52,19 @@ export default class Menu extends Component {
           &nbsp;Eduardo&nbsp;
           <TitleCode>&lt;/h1&gt; </TitleCode>
         </Title>
-        <Nav>
-          <NavLink href="#about">./Sobre</NavLink>
-          <NavLink href="#resume">./Portfólio</NavLink>
-          <NavLink href="#contact">./Contato</NavLink>
-        </Nav>
+
+        <Nav>{this.createNavLinks()}</Nav>
+
+        <MobileMenu onClick={this.modalAction}>
+          <FaBars />
+        </MobileMenu>
+
+        <MenuModal MenuModal visible={this.state.modalOpen}>
+          {this.createNavLinks()}
+          <CloseModal onClick={this.modalAction}>
+            <FaRegTimesCircle />
+          </CloseModal>
+        </MenuModal>
       </MenuContainer>
     );
   }

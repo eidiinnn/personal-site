@@ -11,7 +11,7 @@ import { Fade } from "react-awesome-reveal";
 export default class Portfolio extends Component {
   render() {
     return (
-      <Container noMarginTop id="resume">
+      <Container noMarginTop id="portfolio">
         <Fade triggerOnce duration={2000} damping={1}>
           <CategoryTitle>&lt;Portfólio /&gt;</CategoryTitle>
           <CategoryText>

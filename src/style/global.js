@@ -34,6 +34,10 @@ export const Container = styled.section`
     margin: 5rem 0rem 5rem 0rem;
     height: min-content !important;
   }
+
+  @media screen and (max-width: 737px) {
+    padding: 3rem 1.5rem 0rem 1.5rem;
+  }
 `;
 
 export const CategoryTitle = styled.h1`
