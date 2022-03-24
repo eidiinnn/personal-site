@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FaBars, FaRegTimesCircle } from "react-icons/fa";
 import {
+  MenuMain,
   MenuContainer,
   Title,
   Nav,
@@ -20,9 +21,9 @@ export default class Menu extends Component {
   state = {
     modalOpen: false,
     links: [
-      { name: "Sobre", link: "#about" },
-      { name: "Portfólio", link: "#portfolio" },
-      { name: "Contato", link: "#contact" },
+      { name: "./Sobre", link: "#about" },
+      { name: "./Portfólio", link: "#portfolio" },
+      { name: "./Contato", link: "#contact" },
     ],
   };
 
@@ -46,26 +47,28 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <MenuContainer id="menu">
-        <Title>
-          <TitleCode>&lt;h1&gt;</TitleCode>
-          &nbsp;Eduardo&nbsp;
-          <TitleCode>&lt;/h1&gt; </TitleCode>
-        </Title>
+      <MenuMain>
+        <MenuContainer>
+          <Title>
+            <TitleCode>&lt;h1&gt;</TitleCode>
+            &nbsp;Eduardo&nbsp;
+            <TitleCode>&lt;/h1&gt; </TitleCode>
+          </Title>
 
-        <Nav>{this.createNavLinks()}</Nav>
+          <Nav>{this.createNavLinks()}</Nav>
 
-        <MobileMenu onClick={this.modalAction}>
-          <FaBars />
-        </MobileMenu>
+          <MobileMenu onClick={this.modalAction}>
+            <FaBars />
+          </MobileMenu>
 
-        <MenuModal MenuModal visible={this.state.modalOpen}>
-          {this.createNavLinks()}
-          <CloseModal onClick={this.modalAction}>
-            <FaRegTimesCircle />
-          </CloseModal>
-        </MenuModal>
-      </MenuContainer>
+          <MenuModal MenuModal visible={this.state.modalOpen}>
+            {this.createNavLinks()}
+            <CloseModal onClick={this.modalAction}>
+              <FaRegTimesCircle />
+            </CloseModal>
+          </MenuModal>
+        </MenuContainer>
+      </MenuMain>
     );
   }
 }
