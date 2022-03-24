@@ -35,8 +35,8 @@ export const Container = styled.section`
     height: min-content !important;
   }
 
-  @media screen and (max-width: 514px) {
-    padding: 6rem 1.5rem 0rem 1.5rem;
+  @media screen and (max-width: 737px) {
+    padding: 3rem 1.5rem 0rem 1.5rem;
   }
 `;
 

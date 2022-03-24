@@ -13,12 +13,12 @@ export const MenuContainer = styled.menu`
   justify-content: space-between;
   align-items: center;
 
-  position: absolute;
+  position: fixed;
   width: 100%;
   box-sizing: border-box;
   top: 0;
   background-color: ${backgroundColor};
-  padding: 0.5rem 8rem 0.5rem 8rem;
+  padding: 1.5rem 8rem 1.5rem 8rem;
   margin-top: 0;
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,8 @@ export const MenuContainer = styled.menu`
   z-index: 10;
 
   @media screen and (max-width: 737px) {
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   }
 `;
 
@@ -36,6 +37,7 @@ export const Title = styled.h1`
   font-size: 1.5rem;
   color: ${primaryColor};
   font-weight: 700;
+  margin: 0;
 `;
 
 export const TitleCode = styled.i`
@@ -50,6 +52,10 @@ export const Nav = styled.nav`
   flex-direction: row;
   list-style-type: none;
   min-width: min-content;
+
+  @media screen and (max-width: 737px) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -62,8 +68,46 @@ export const NavLink = styled.a`
   &:hover {
     color: ${secondaryColor};
   }
+
+  @media screen and (max-width: 737px) {
+    font-size: 2rem;
+  }
 `;
 
-export const AfterNameLink = styled.b`
-  color: ${secondaryColor};
+export const MobileMenu = styled.div`
+  font-size: 1.5rem;
+  color: ${normalTextColor};
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 737px) {
+    display: flex;
+  }
+`;
+
+export const MenuModal = styled.nav`
+  position: fixed;
+
+  min-width: 100%;
+  height: 100vh;
+
+  left: 0;
+  top: 0;
+
+  background-color: ${backgroundColor};
+
+  display: ${(props) => (!props.visible ? "none" : "flex")};
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 70;
+`;
+
+export const CloseModal = styled.div`
+  font-size: 2rem;
+  color: ${normalTextColor};
+  margin-top: 1rem;
 `;
