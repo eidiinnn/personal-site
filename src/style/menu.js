@@ -13,7 +13,7 @@ export const MenuContainer = styled.menu`
   justify-content: space-between;
   align-items: center;
 
-  position: fixed;
+  position: absolute;
   width: 100%;
   box-sizing: border-box;
   top: 0;
@@ -62,4 +62,8 @@ export const NavLink = styled.a`
   &:hover {
     color: ${secondaryColor};
   }
+`;
+
+export const AfterNameLink = styled.b`
+  color: ${secondaryColor};
 `;
