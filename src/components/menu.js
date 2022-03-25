@@ -13,18 +13,9 @@ import {
 } from "../style/menu";
 
 export default class Menu extends Component {
-  modalAction = () => {
+  modalHiddenShow = () => {
     if (window.innerWidth <= 737)
       return this.setState({ modalOpen: this.state.modalOpen ? false : true });
-  };
-
-  state = {
-    modalOpen: false,
-    links: [
-      { name: "./Sobre", link: "#about" },
-      { name: "./Portfólio", link: "#portfolio" },
-      { name: "./Contato", link: "#contact" },
-    ],
   };
 
   createNavLinks = () => {
@@ -35,7 +26,7 @@ export default class Menu extends Component {
             <NavLink
               key={item.name}
               href={item.link}
-              onClick={this.modalAction}
+              onClick={this.modalHiddenShow}
             >
               {item.name}
             </NavLink>
@@ -43,6 +34,15 @@ export default class Menu extends Component {
         })}
       </>
     );
+  };
+
+  state = {
+    modalOpen: false,
+    links: [
+      { name: "./Sobre", link: "#about" },
+      { name: "./Portfólio", link: "#portfolio" },
+      { name: "./Contato", link: "#contact" },
+    ],
   };
 
   render() {
@@ -57,13 +57,13 @@ export default class Menu extends Component {
 
           <Nav>{this.createNavLinks()}</Nav>
 
-          <MobileMenu onClick={this.modalAction}>
+          <MobileMenu onClick={this.modalHiddenShow}>
             <FaBars />
           </MobileMenu>
 
           <MenuModal MenuModal visible={this.state.modalOpen}>
             {this.createNavLinks()}
-            <CloseModal onClick={this.modalAction}>
+            <CloseModal onClick={this.modalHiddenShow}>
               <FaRegTimesCircle />
             </CloseModal>
           </MenuModal>
