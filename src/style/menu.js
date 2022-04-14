@@ -23,7 +23,7 @@ export const MenuMain = styled.menu`
   margin-top: 0;
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto";
+  font-family: "SpaceMono";
   visibility: hidden;
   animation: menuVisible 1.5s 1s forwards;
   z-index: 10;
@@ -51,6 +51,7 @@ export const Title = styled.h1`
 
 export const TitleCode = styled.i`
   margin: 0;
+  font-family: "Roboto";
   font-size: 0.9rem;
   color: ${normalTextColor};
   font-weight: 700;
@@ -95,7 +96,7 @@ export const MenuModal = styled.nav`
 
 export const MenuLink = styled.a`
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: left;
   color: ${normalTextColor};
   padding: 0.5rem;

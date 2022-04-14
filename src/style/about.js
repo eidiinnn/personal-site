@@ -7,6 +7,7 @@ export const TextContainer = styled.article`
 `;
 
 export const Title = styled.h1`
+  font-family: "SpaceMono";
   font-size: 1.2rem;
   text-align: left;
   font-weight: 700;
@@ -19,6 +20,7 @@ export const Title = styled.h1`
 `;
 
 export const TitleBiggerText = styled.p`
+  font-family: "Roboto";
   color: ${primaryColor};
   font-size: 3.3rem;
   line-height: 3.2rem;

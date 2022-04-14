@@ -28,7 +28,7 @@ export default class Contact extends Component {
     return (
       <Fade direction="up" triggerOnce duration={2000} damping={1}>
         <Container id="contact">
-          <CategoryTitle>&lt;Contato /&gt;</CategoryTitle>
+          <CategoryTitle>Contato</CategoryTitle>
           <CategoryText>
             Querendo me oferecer um job de Freelancer ou vaga de emprego? Entre
             em contato comigo e vamos conversar.

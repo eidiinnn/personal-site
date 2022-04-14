@@ -50,7 +50,7 @@ export default class Menu extends Component {
         <MenuContainer>
           <Title>
             <TitleCode>&lt;h1&gt;</TitleCode>
-            &nbsp;Eduardo&nbsp;
+            Eduardo
             <TitleCode>&lt;/h1&gt; </TitleCode>
           </Title>
 
