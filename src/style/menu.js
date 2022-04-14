@@ -57,7 +57,7 @@ export const TitleCode = styled.i`
 `;
 
 export const Nav = styled.nav`
-  display: flex;
+  display: none;
   flex-direction: row;
   list-style-type: none;
   min-width: min-content;
@@ -69,7 +69,8 @@ export const Nav = styled.nav`
 
 export const NavLink = styled.a`
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 2.5rem;
+  text-align: left;
   color: ${normalTextColor};
   padding: 0.5rem;
   transition: 1000ms;
@@ -77,23 +78,23 @@ export const NavLink = styled.a`
   &:hover {
     color: ${secondaryColor};
   }
-
-  @media screen and (max-width: 737px) {
-    font-size: 2.5rem;
-    text-align: left;
-  }
 `;
 
 export const MobileMenu = styled.div`
   font-size: 1.5rem;
   color: ${normalTextColor};
 
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const MenuLabel = styled.h2`
+  font-size: 1.1rem;
+  margin: 0 0.5rem 0 0;
 
   @media screen and (max-width: 737px) {
-    display: flex;
+    display: none;
   }
 `;
 
