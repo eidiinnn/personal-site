@@ -3,6 +3,7 @@ import { FaBars, FaRegTimesCircle } from "react-icons/fa";
 import {
   MenuMain,
   MenuContainer,
+  MenuLabel,
   Title,
   Nav,
   NavLink,
@@ -14,8 +15,7 @@ import {
 
 export default class Menu extends Component {
   modalHiddenShow = () => {
-    if (window.innerWidth <= 737)
-      return this.setState({ modalOpen: this.state.modalOpen ? false : true });
+    return this.setState({ modalOpen: this.state.modalOpen ? false : true });
   };
 
   createNavLinks = () => {
@@ -55,9 +55,8 @@ export default class Menu extends Component {
             <TitleCode>&lt;/h1&gt; </TitleCode>
           </Title>
 
-          <Nav>{this.createNavLinks()}</Nav>
-
           <MobileMenu onClick={this.modalHiddenShow}>
+            <MenuLabel> Menu </MenuLabel>
             <FaBars />
           </MobileMenu>
 

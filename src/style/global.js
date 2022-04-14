@@ -5,11 +5,12 @@ import RobotoRegular from "../fonts/Roboto-Regular.ttf";
 import RobotoBold from "../fonts/Roboto-Bold.ttf";
 import RobotoLight from "../fonts/Roboto-Light.ttf";
 
-export const primaryColor = "#ff79c6";
-export const secondaryColor = "#36fcff";
+export const primaryColor = "#AD90E7";
+export const secondaryColor = "#2AC3DE";
+export const tertiaryColor = "#F1748D";
 export const normalTextColor = "#b2b2b2";
-export const backgroundColor = "#22212c";
-export const DarkBackgroundColor = "#1b1a25";
+export const backgroundColor = "#1A1B27";
+export const DarkBackgroundColor = "#121421";
 
 export const Container = styled.section`
   display: flex;
