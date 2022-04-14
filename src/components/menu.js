@@ -5,10 +5,9 @@ import {
   MenuContainer,
   MenuLabel,
   Title,
-  Nav,
-  NavLink,
+  MenuLink,
   TitleCode,
-  MobileMenu,
+  MenuIcon,
   MenuModal,
   CloseModal,
 } from "../style/menu";
@@ -23,13 +22,13 @@ export default class Menu extends Component {
       <>
         {this.state.links.map((item) => {
           return (
-            <NavLink
+            <MenuLink
               key={item.name}
               href={item.link}
               onClick={this.modalHiddenShow}
             >
               {item.name}
-            </NavLink>
+            </MenuLink>
           );
         })}
       </>
@@ -55,10 +54,10 @@ export default class Menu extends Component {
             <TitleCode>&lt;/h1&gt; </TitleCode>
           </Title>
 
-          <MobileMenu onClick={this.modalHiddenShow}>
+          <MenuIcon onClick={this.modalHiddenShow}>
             <MenuLabel> Menu </MenuLabel>
             <FaBars />
-          </MobileMenu>
+          </MenuIcon>
 
           <MenuModal MenuModal visible={this.state.modalOpen}>
             {this.createNavLinks()}

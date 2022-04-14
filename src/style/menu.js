@@ -56,31 +56,7 @@ export const TitleCode = styled.i`
   font-weight: 700;
 `;
 
-export const Nav = styled.nav`
-  display: none;
-  flex-direction: row;
-  list-style-type: none;
-  min-width: min-content;
-
-  @media screen and (max-width: 737px) {
-    display: none;
-  }
-`;
-
-export const NavLink = styled.a`
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-align: left;
-  color: ${normalTextColor};
-  padding: 0.5rem;
-  transition: 1000ms;
-
-  &:hover {
-    color: ${secondaryColor};
-  }
-`;
-
-export const MobileMenu = styled.div`
+export const MenuIcon = styled.div`
   font-size: 1.5rem;
   color: ${normalTextColor};
 
@@ -115,6 +91,19 @@ export const MenuModal = styled.nav`
   align-items: center;
 
   z-index: 70;
+`;
+
+export const MenuLink = styled.a`
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: left;
+  color: ${normalTextColor};
+  padding: 0.5rem;
+  transition: 1000ms;
+
+  &:hover {
+    color: ${secondaryColor};
+  }
 `;
 
 export const CloseModal = styled.div`
