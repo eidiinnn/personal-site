@@ -4,6 +4,8 @@ import { createGlobalStyle } from "styled-components";
 import RobotoRegular from "../fonts/Roboto-Regular.ttf";
 import RobotoBold from "../fonts/Roboto-Bold.ttf";
 import RobotoLight from "../fonts/Roboto-Light.ttf";
+import SpaceMonoRegular from "../fonts/SpaceMono-Regular.ttf";
+import SpaceMonoBold from "../fonts/SpaceMono-Bold.ttf";
 
 export const primaryColor = "#AD90E7";
 export const secondaryColor = "#2AC3DE";
@@ -42,6 +44,7 @@ export const Container = styled.section`
 `;
 
 export const CategoryTitle = styled.h1`
+  font-family: "SpaceMono";
   font-size: 3rem;
   color: ${primaryColor};
   text-align: left;
@@ -71,6 +74,7 @@ export const CategoryText = styled.p`
 `;
 
 export const TextHighlight = styled.b`
+  font-family: "SpaceMono";
   font-weight: 700;
   color: ${secondaryColor};
   margin: 0;
@@ -97,6 +101,16 @@ body {
     font-family: "Roboto";
     src: url(${RobotoLight});
     font-weight: 300;
+}
+@font-face {
+    font-family: "SpaceMono";
+    src: url(${SpaceMonoRegular});
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SpaceMono";
+    src: url(${SpaceMonoBold});
+    font-weight: 700;
 }
 
 a:link {

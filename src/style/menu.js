@@ -23,7 +23,7 @@ export const MenuMain = styled.menu`
   margin-top: 0;
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto";
+  font-family: "SpaceMono";
   visibility: hidden;
   animation: menuVisible 1.5s 1s forwards;
   z-index: 10;
@@ -51,36 +51,13 @@ export const Title = styled.h1`
 
 export const TitleCode = styled.i`
   margin: 0;
+  font-family: "Roboto";
   font-size: 0.9rem;
   color: ${normalTextColor};
   font-weight: 700;
 `;
 
-export const Nav = styled.nav`
-  display: none;
-  flex-direction: row;
-  list-style-type: none;
-  min-width: min-content;
-
-  @media screen and (max-width: 737px) {
-    display: none;
-  }
-`;
-
-export const NavLink = styled.a`
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-align: left;
-  color: ${normalTextColor};
-  padding: 0.5rem;
-  transition: 1000ms;
-
-  &:hover {
-    color: ${secondaryColor};
-  }
-`;
-
-export const MobileMenu = styled.div`
+export const MenuIcon = styled.div`
   font-size: 1.5rem;
   color: ${normalTextColor};
 
@@ -115,6 +92,19 @@ export const MenuModal = styled.nav`
   align-items: center;
 
   z-index: 70;
+`;
+
+export const MenuLink = styled.a`
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: left;
+  color: ${normalTextColor};
+  padding: 0.5rem;
+  transition: 1000ms;
+
+  &:hover {
+    color: ${secondaryColor};
+  }
 `;
 
 export const CloseModal = styled.div`
