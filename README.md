@@ -1,8 +1,6 @@
 # My personal website
-<img src="https://avatars.githubusercontent.com/u/67817853?v=4" alt="screenshot" width="300"/>
-The website has a contact option and displays my public repositories from GitHub.
-
-## Access the website
+My personal website in React. <br />
 You can access [Here](https://eidiinnn.github.io/Personal-website/).
 
-
+## Screenshot
+<img src="https://i.imgur.com/7k0mpVa.png" alt="screenshot" width="800"/>
