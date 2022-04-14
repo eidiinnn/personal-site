@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <Container noMarginTop id="portfolio">
-        <Fade triggerOnce duration={2000} damping={1}>
+        <Fade direction="up" triggerOnce duration={2000} damping={1}>
           <CategoryTitle>&lt;Portfólio /&gt;</CategoryTitle>
           <CategoryText>
             Alguns projetos pessoais que desenvolvi ou estou desenvolvendo no
