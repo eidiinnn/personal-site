@@ -26,7 +26,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <Fade direction="up" triggerOnce duration={2000} damping={1}>
+      <Fade direction="up" triggerOnce duration={1000} damping={1}>
         <Container id="contact">
           <CategoryTitle>Contato</CategoryTitle>
           <CategoryText>
