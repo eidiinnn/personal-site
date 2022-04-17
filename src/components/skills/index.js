@@ -16,7 +16,7 @@ export default function Skills() {
         <CategoryTitle>Habilidades</CategoryTitle>
         <CategoryText>
           Front-end com <TextHighlight>React</TextHighlight> e outras
-          tenoclogias como <TextHighlight>Html/Css</TextHighlight>,{" "}
+          tecnologias como <TextHighlight>Html/Css</TextHighlight>,{" "}
           <TextHighlight>JavaScript</TextHighlight>,{" "}
           <TextHighlight>Styled-components</TextHighlight>,{" "}
           <TextHighlight>Jest</TextHighlight>,{" "}
