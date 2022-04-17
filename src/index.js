@@ -4,6 +4,7 @@ import { GlobalStyle } from "./style/global";
 
 import Menu from "./components/menu";
 import About from "./components/about";
+import Skills from "./components/skills";
 import Portfolio from "./components/portfolio/";
 import Contact from "./components/contact";
 import Aside from "./components/aside";
@@ -13,6 +14,7 @@ ReactDOM.render(
     <GlobalStyle />
     <Menu />
     <About />
+    <Skills />
     <Portfolio />
     <Contact />
     <Aside />
