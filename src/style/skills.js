@@ -17,14 +17,17 @@ export const SkillsUrl = styled.ul`
   @media screen and (max-width: 857px) {
     transform: scale(0.6);
     height: 250px;
+    padding: 1rem;
   }
   @media screen and (max-width: 345px) {
     transform: scale(0.5);
     height: 200px;
+    padding: 1rem;
   }
   @media screen and (max-width: 300px) {
     transform: scale(0.4);
     height: 200px;
+    padding: 1rem;
   }
 `;
 

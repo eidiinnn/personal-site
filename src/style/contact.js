@@ -7,6 +7,7 @@ export const Form = styled.form`
   align-self: left;
   grid-row: 2;
   width: 600px;
+  margin: 0 auto;
   align-self: center;
   justify-content: center;
   align-items: center;
