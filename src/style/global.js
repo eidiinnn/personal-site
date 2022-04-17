@@ -170,4 +170,25 @@ a:active {
     visibility: visible;
 	}
 }
+
+@keyframes rotationSkillLi{
+  0% {
+    transform: rotate( 0deg );
+  }
+  10% {
+    transform: rotate( 15deg );
+  }
+  100% {
+    transform: rotate( -360deg );
+  }
+}
+
+@keyframes rotationTechDiv{
+  0%, 10% {
+    transform: rotate( 0deg );
+  }
+  100% {
+    transform: rotate( 360deg );
+  }
+}
 `;

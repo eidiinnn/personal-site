@@ -39,6 +39,7 @@ export default class Menu extends Component {
     modalOpen: false,
     links: [
       { name: "./Sobre", link: "#about" },
+      { name: "./Habilidades", link: "#skills" },
       { name: "./Portfólio", link: "#portfolio" },
       { name: "./Contato", link: "#contact" },
     ],
