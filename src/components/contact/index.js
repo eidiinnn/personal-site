@@ -26,14 +26,13 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <Fade direction="up" triggerOnce duration={1000} damping={1}>
-        <Container id="contact">
+      <Container id="contact">
+        <Fade direction="up" triggerOnce duration={1000} damping={1}>
           <CategoryTitle>Contato</CategoryTitle>
           <CategoryText>
             Querendo me oferecer um job de Freelancer ou vaga de emprego? Entre
             em contato comigo e vamos conversar.
           </CategoryText>
-
           <Form id="form" onSubmit={this.email}>
             <Icon>
               <FaPaperPlane />
@@ -51,8 +50,8 @@ export default class Contact extends Component {
             <TextArea id="message" placeholder="Mensagem"></TextArea>
             <Submit type="submit" value="Enviar"></Submit>
           </Form>
-        </Container>
-      </Fade>
+        </Fade>
+      </Container>
     );
   }
 }
