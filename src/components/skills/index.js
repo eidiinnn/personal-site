@@ -21,8 +21,7 @@ export default function Skills() {
           <TextHighlight>Styled-components</TextHighlight>,{" "}
           <TextHighlight>Jest</TextHighlight>,{" "}
           <TextHighlight>Redux</TextHighlight> e{" "}
-          <TextHighlight>Docker</TextHighlight>. Minhas tecnologias favoritas
-          são:
+          <TextHighlight>Docker</TextHighlight>.
         </CategoryText>
 
         <SolarSystem />

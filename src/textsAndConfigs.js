@@ -7,19 +7,20 @@ export const textsAndConfigs = {
     {
       name: "Fox Home",
       tech: "React styled-components Redux Dexie",
-      description: `Uma página inicial personalizada para navegadores. Com opções de trocar a cor,
-  imagem, AM PM formato e sites favoritos. No futuro irá virar uma extensão para
-  navegadores como o Google Chrome e o Firefox.`,
+      description: `Uma página inicial personalizada para navegadores. 
+      Com opções de trocar a cor e imagem, formato de 12 horas, 
+      borrão de fundo, bordas arrendondadas e sites favoritos. 
+      Atualmente disponivel para download na Chrome Web Store.`,
       github: "https://github.com/eidiinnn/Home-page",
-      link: "https://eidiinnn.github.io/Home-page/",
+      link: "https://chrome.google.com/webstore/detail/fox-home/kbalcggddakepkjgcpijccappaeppfmh",
     },
 
     {
       name: "Site Pessoal",
       tech: "React EmailJs Jest styled-components.",
-      description: `Meu site pessoal, usado para mostrar um pouco sobre mim e meus projetos. Como opção
-      de contato é usada a API do EmailJS para mandar as mensagens para minha caixa de
-      entrada e também é responsivo deixando a navegação mais fácil nos celulares.`,
+      description: `Uma página inicial personalizada para navegadores. Com opções de trocar a cor e imagem, 
+      formato de 12 horas, borrão de fundo, bordas arrendondadas e sites favoritos. 
+      Atualmente disponível para download na Chrome Web Store.`,
       github: "https://github.com/eidiinnn/Personal-website",
       link: " https://eduardosilva.online",
     },
