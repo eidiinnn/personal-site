@@ -4,7 +4,7 @@ import { backgroundColor, DarkBackgroundColor, secondaryColor } from "./global";
 export const SkillsUrl = styled.ul`
   position: relative;
   width: min-content;
-  height: 400px;
+  height: 30rem;
   margin: 0 auto;
   padding: 4rem;
 
@@ -16,17 +16,17 @@ export const SkillsUrl = styled.ul`
 
   @media screen and (max-width: 857px) {
     transform: scale(0.6);
-    height: 250px;
+    height: 20rem;
     padding: 1rem;
   }
   @media screen and (max-width: 345px) {
     transform: scale(0.5);
-    height: 200px;
+    height: 15rem;
     padding: 1rem;
   }
   @media screen and (max-width: 300px) {
     transform: scale(0.4);
-    height: 200px;
+    height: 12rem;
     padding: 1rem;
   }
 `;
