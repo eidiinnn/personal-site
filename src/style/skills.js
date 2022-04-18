@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primaryColor, DarkBackgroundColor, secondaryColor } from "./global";
+import { backgroundColor, DarkBackgroundColor, secondaryColor } from "./global";
 
 export const SkillsUrl = styled.ul`
   position: relative;
@@ -36,7 +36,12 @@ export const SkillsLi = styled.li`
   width: ${(props) => props.size};
   height: ${(props) => props.size};
   border-radius: 50%;
-  border: 1px solid ${secondaryColor};
+  border: double 1px solid transparent;
+
+  background-image: radial-gradient(transparent, ${DarkBackgroundColor});
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-image-slice: 1;
 
   display: flex;
   align-self: center;
@@ -45,11 +50,11 @@ export const SkillsLi = styled.li`
   animation: rotationSkillLi ${(props) => props.speed} linear infinite;
 `;
 
-export const TechDiv = styled.div`
+export const TechDiv = styled.li`
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: ${DarkBackgroundColor};
+  background-color: ${secondaryColor};
   border-radius: 50%;
   top: 0px;
   left: -1.25rem;
@@ -60,8 +65,8 @@ export const TechDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  size: 1.8rem;
-  color: ${secondaryColor};
+  font-size: 1.3rem;
+  color: ${DarkBackgroundColor};
   align-self: center;
 
   animation: rotationTechDiv ${(props) => props.speed} linear infinite;
@@ -78,7 +83,8 @@ export const TechCenter = styled.li`
   height: 55px !important;
   border-radius: 50%;
 
-  font-size: 1.4rem;
-  background-color: ${DarkBackgroundColor};
+  font-size: 1.8rem;
+  background-color: radial-gradient(${DarkBackgroundColor}, transparent);
   color: ${secondaryColor};
+  z-index: 10;
 `;
