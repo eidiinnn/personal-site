@@ -36,13 +36,13 @@ export const SkillsLi = styled.li`
   width: ${(props) => props.size};
   height: ${(props) => props.size};
   border-radius: 50%;
-  border: 1px solid ${primaryColor};
+  border: 1px solid ${secondaryColor};
 
   display: flex;
   align-self: center;
   justify-self: center;
 
-  animation: rotationSkillLi ${(props) => props.speed} infinite;
+  animation: rotationSkillLi ${(props) => props.speed} linear infinite;
 `;
 
 export const TechDiv = styled.div`
@@ -64,7 +64,7 @@ export const TechDiv = styled.div`
   color: ${secondaryColor};
   align-self: center;
 
-  animation: rotationTechDiv ${(props) => props.speed} infinite;
+  animation: rotationTechDiv ${(props) => props.speed} linear infinite;
 `;
 
 export const TechCenter = styled.li`

@@ -29,8 +29,8 @@ export default function SolarSystem() {
           <SiRedux />
         </TechDiv>
       </SkillsLi>
-      <SkillsLi size="28.5rem" speed="11s">
-        <TechDiv speed="11s">
+      <SkillsLi size="28.5rem" speed="14s">
+        <TechDiv speed="14s">
           <SiJest />
         </TechDiv>
       </SkillsLi>
