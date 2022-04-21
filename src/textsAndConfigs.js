@@ -18,9 +18,9 @@ export const textsAndConfigs = {
     {
       name: "Site Pessoal",
       tech: "React EmailJs Jest styled-components.",
-      description: `Uma página inicial personalizada para navegadores. Com opções de trocar a cor e imagem, 
-      formato de 12 horas, borrão de fundo, bordas arrendondadas e sites favoritos. 
-      Atualmente disponível para download na Chrome Web Store.`,
+      description: `Meu site pessoal, usado para mostrar um pouco sobre mim e meus projetos. Como opção
+      de contato é usada a API do EmailJS para mandar as mensagens para minha caixa de
+      entrada e também é responsivo deixando a navegação mais fácil nos celulares.`,
       github: "https://github.com/eidiinnn/Personal-website",
       link: " https://eduardosilva.online",
     },
