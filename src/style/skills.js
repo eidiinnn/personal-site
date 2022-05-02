@@ -1,12 +1,59 @@
 import styled from "styled-components";
-import { backgroundColor, DarkBackgroundColor, secondaryColor } from "./global";
+import { DarkBackgroundColor, primaryColor, secondaryColor } from "./global";
 
-export const SkillsUrl = styled.ul`
+export const SkillsContentContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+
+  @media screen and (max-width: 935px) {
+    grid-template-columns: none;
+    grind-template-rows: 1fr 1fr;
+  }
+`;
+
+export const TechNameUl = styled.ul`
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  font-family: "Sora";
+  color: ${primaryColor};
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+
+  @media screen and (max-width: 935px) {
+    font-size: 1.2rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+`;
+
+export const TechNameLi = styled.li`
+  margin-left: 1rem;
+  cursor: default;
+  transition: 500ms;
+
+  &:hover {
+    transform: scale(1.2);
+    color: ${(props) => props.color};
+  }
+`;
+
+export const SolarSystemContainer = styled.ul`
   position: relative;
   width: min-content;
   height: 30rem;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 0;
 
   display: flex;
   align-items: center;
@@ -31,7 +78,7 @@ export const SkillsUrl = styled.ul`
   }
 `;
 
-export const SkillsLi = styled.li`
+export const SolarSystemTechLi = styled.li`
   position: absolute;
   width: ${(props) => props.size};
   height: ${(props) => props.size};
@@ -50,7 +97,7 @@ export const SkillsLi = styled.li`
   animation: rotationSkillLi ${(props) => props.speed} linear infinite;
 `;
 
-export const TechDiv = styled.li`
+export const SolarSystemTechDiv = styled.li`
   position: relative;
   width: 50px;
   height: 50px;
@@ -69,10 +116,11 @@ export const TechDiv = styled.li`
   color: ${DarkBackgroundColor};
   align-self: center;
 
-  animation: rotationTechDiv ${(props) => props.speed} linear infinite;
+  animation: rotationSolarSystemTechDiv ${(props) => props.speed} linear
+    infinite;
 `;
 
-export const TechCenter = styled.li`
+export const SolarSystemTechCenter = styled.li`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
