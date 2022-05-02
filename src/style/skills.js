@@ -7,9 +7,10 @@ export const SkillsContentContainer = styled.div`
   width: 100%;
   align-items: center;
 
-  @media screen and (max-width: 935px) {
+  @media screen and (max-width: 1206px) {
     grid-template-columns: none;
     grind-template-rows: 1fr 1fr;
+    justify-content: center;
   }
 `;
 
@@ -30,10 +31,16 @@ export const TechNameUl = styled.ul`
   text-decoration: none;
   list-style-type: none;
 
-  @media screen and (max-width: 935px) {
+  @media screen and (max-width: 1206px) {
+    width: 80%;
+    margin: 0 auto;
     font-size: 1.2rem;
     justify-content: center;
     margin-bottom: 0.5rem;
+  }
+
+  @media screen and (max-width: 740px) {
+    width: 100%;
   }
 `;
 
