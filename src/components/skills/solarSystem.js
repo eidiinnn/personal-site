@@ -1,5 +1,10 @@
 import React from "react";
-import { SkillsUrl, SkillsLi, TechDiv, TechCenter } from "../../style/skills";
+import {
+  SolarSystemContainer,
+  SolarSystemTechLi,
+  SolarSystemTechDiv,
+  SolarSystemTechCenter,
+} from "../../style/skills";
 import {
   SiStyledcomponents,
   SiRedux,
@@ -10,34 +15,34 @@ import {
 
 export default function SolarSystem() {
   return (
-    <SkillsUrl>
-      <SkillsLi size="28.5rem" speed="14s">
-        <TechDiv speed="14s">
+    <SolarSystemContainer>
+      <SolarSystemTechLi size="28.5rem" speed="14s">
+        <SolarSystemTechDiv speed="14s">
           <SiJest />
-        </TechDiv>
-      </SkillsLi>
+        </SolarSystemTechDiv>
+      </SolarSystemTechLi>
 
-      <SkillsLi size="21.5rem" speed="4s">
-        <TechDiv speed="4s">
+      <SolarSystemTechLi size="21.5rem" speed="4s">
+        <SolarSystemTechDiv speed="4s">
           <SiRedux />
-        </TechDiv>
-      </SkillsLi>
+        </SolarSystemTechDiv>
+      </SolarSystemTechLi>
 
-      <SkillsLi size="14.5rem" speed="10s">
-        <TechDiv speed="10s">
+      <SolarSystemTechLi size="14.5rem" speed="10s">
+        <SolarSystemTechDiv speed="10s">
           <SiStyledcomponents />
-        </TechDiv>
-      </SkillsLi>
+        </SolarSystemTechDiv>
+      </SolarSystemTechLi>
 
-      <SkillsLi size="7.5rem" speed="3s">
-        <TechDiv speed="3s">
+      <SolarSystemTechLi size="7.5rem" speed="3s">
+        <SolarSystemTechDiv speed="3s">
           <SiReact />
-        </TechDiv>
-      </SkillsLi>
+        </SolarSystemTechDiv>
+      </SolarSystemTechLi>
 
-      <TechCenter>
+      <SolarSystemTechCenter>
         <SiJavascript />
-      </TechCenter>
-    </SkillsUrl>
+      </SolarSystemTechCenter>
+    </SolarSystemContainer>
   );
 }
