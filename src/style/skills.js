@@ -51,7 +51,7 @@ export const TechNameLi = styled.li`
 export const SolarSystemContainer = styled.ul`
   position: relative;
   width: min-content;
-  height: 30rem;
+  height: 32rem;
   margin: 0 auto;
   padding: 0;
 
