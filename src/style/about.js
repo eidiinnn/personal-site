@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { primaryColor, secondaryColor, normalTextColor } from "./global";
 
 export const AboutContainer = styled.section`
-  width: 1200px;
+  max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
   display: grid;
@@ -13,8 +13,8 @@ export const AboutContainer = styled.section`
   font-family: "Roboto";
 
   @media screen and (max-width: 1206px) {
-    width: fit-content;
-    max-width: 100%;
+    height: 60vh;
+    margin: 0 auto;
     margin: 5rem 1.5rem 5rem 1.5rem;
   }
 
@@ -87,15 +87,15 @@ export const ProfileImage = styled.img`
   @media screen and (max-width: 1206px) {
     width: 20rem;
     height: auto;
-    margin: 0;
-    align-self: center;
+    margin: 0 auto;
+    justify-self: center;
   }
 
   @media only screen and (max-width: 866px) {
     width: 9rem;
     height: auto;
     margin: 0;
-    align-self: left;
+    justify-self: left;
   }
 `;
 

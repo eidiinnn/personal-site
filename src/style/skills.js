@@ -42,6 +42,7 @@ export const TechNameUl = styled.ul`
     font-size: 2rem;
     justify-content: center;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
 
   @media screen and (max-width: 740px) {

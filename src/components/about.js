@@ -53,7 +53,7 @@ export default class About extends Component {
           direction="right"
           duration={1000}
           damping={1}
-          className="profileImageAnimation"
+          style={{ display: "flex", width: "100%" }}
         >
           <ProfileImage src={profile} alt="it's me"></ProfileImage>
         </Fade>

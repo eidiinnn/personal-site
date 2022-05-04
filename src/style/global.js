@@ -125,13 +125,6 @@ a:active {
   text-decoration: none;
 }
 
-.profileImageAnimation{
-  align-self: center !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media only screen and (max-width: 603px){
   .profileImageAnimation{
     justify-content: left;
