@@ -51,6 +51,7 @@ export const ProjectListLi = styled.li`
 `;
 
 export const ProjectListTitle = styled.h1`
+  font-family: "Bebas Neue", cursive;
   color: ${primaryColor};
   align-self: left;
   font-size: 2rem;
@@ -63,7 +64,7 @@ export const Tech = styled.p`
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   font-size: 1.1rem;
 
@@ -110,7 +111,8 @@ export const PdfResumeContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  font-size: 1.4rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.6rem;
   font-weight: 700;
   color: ${normalTextColor};
 

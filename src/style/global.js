@@ -7,6 +7,7 @@ import RobotoLight from "../fonts/Roboto-Light.ttf";
 import SpaceMonoRegular from "../fonts/SpaceMono-Regular.ttf";
 import SpaceMonoBold from "../fonts/SpaceMono-Bold.ttf";
 import SoraBold from "../fonts/Sora-Bold.ttf";
+import BebasNeue from "../fonts/BebasNeue-Regular.ttf";
 
 export const primaryColor = "#AD90E7";
 export const secondaryColor = "#2AC3DE";
@@ -45,17 +46,17 @@ export const Container = styled.section`
 `;
 
 export const CategoryTitle = styled.h1`
-  font-family: "SpaceMono";
-  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3.5rem;
   color: ${primaryColor};
   text-align: left;
-  font-weight: 700;
+  font-weight: 400;
 
   margin: 0;
   padding-bottom: 0.1rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -67,7 +68,7 @@ export const CategoryText = styled.p`
 
   max-width: 700px;
   margin-bottom: 5rem;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 
   @media screen and (max-width: 768px) {
     padding-left: 0;
@@ -75,7 +76,7 @@ export const CategoryText = styled.p`
 `;
 
 export const TextHighlight = styled.b`
-  font-family: "SpaceMono";
+  font-family: "Roboto";
   font-weight: 700;
   color: ${secondaryColor};
   margin: 0;
@@ -117,6 +118,10 @@ body {
   font-family: "Sora";
   src: url(${SoraBold});
   font-weight: 700;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(${BebasNeue});
 }
 
 a:link {

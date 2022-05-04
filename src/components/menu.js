@@ -6,7 +6,6 @@ import {
   MenuLabel,
   Title,
   MenuLink,
-  TitleCode,
   MenuIcon,
   MenuModal,
   CloseModal,
@@ -49,11 +48,7 @@ export default class Menu extends Component {
     return (
       <MenuMain>
         <MenuContainer>
-          <Title>
-            <TitleCode>&lt;h1&gt;</TitleCode>
-            Eduardo
-            <TitleCode>&lt;/h1&gt; </TitleCode>
-          </Title>
+          <Title>Eduardo</Title>
 
           <MenuIcon onClick={this.modalHiddenShow}>
             <MenuLabel> Menu </MenuLabel>

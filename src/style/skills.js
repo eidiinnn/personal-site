@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { DarkBackgroundColor, primaryColor, secondaryColor } from "./global";
+import {
+  DarkBackgroundColor,
+  normalTextColor,
+  primaryColor,
+  secondaryColor,
+} from "./global";
 
 export const SkillsContentContainer = styled.div`
   display: grid;
@@ -23,10 +28,10 @@ export const TechNameUl = styled.ul`
   flex-wrap: wrap;
   flex-direction: row;
 
-  font-family: "Sora";
-  color: ${primaryColor};
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-family: "Bebas Neue", cursive;
+  color: ${normalTextColor};
+  font-size: 2.3rem;
+  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   list-style-type: none;
@@ -34,7 +39,7 @@ export const TechNameUl = styled.ul`
   @media screen and (max-width: 1206px) {
     width: 80%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 2rem;
     justify-content: center;
     margin-bottom: 0.5rem;
   }
@@ -45,7 +50,9 @@ export const TechNameUl = styled.ul`
 `;
 
 export const TechNameLi = styled.li`
-  margin-left: 1rem;
+  color: ${primaryColor};
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   cursor: default;
   transition: 500ms;
 

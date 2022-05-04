@@ -7,8 +7,8 @@ export const TextContainer = styled.article`
 `;
 
 export const Title = styled.h1`
-  font-family: "SpaceMono";
-  font-size: 1.2rem;
+  font-family: "roboto";
+  font-size: 1.1rem;
   text-align: left;
   font-weight: 700;
   color: ${secondaryColor};
@@ -20,9 +20,9 @@ export const Title = styled.h1`
 `;
 
 export const TitleBiggerText = styled.p`
-  font-family: "Roboto";
+  font-family: "Bebas Neue", cursive;
   color: ${primaryColor};
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   line-height: 3.2rem;
   margin: 0;
 
@@ -32,7 +32,7 @@ export const TitleBiggerText = styled.p`
   }
 
   @media screen and (max-width: 472px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.6rem;
   }
 `;
@@ -44,7 +44,7 @@ export const Text = styled.p`
   font-weight: 400;
 
   max-width: 500px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 `;
 

@@ -23,7 +23,7 @@ export const MenuMain = styled.menu`
   margin-top: 0;
 
   box-shadow: 5px 21px 32px -6px rgba(0, 0, 0, 0.1);
-  font-family: "SpaceMono";
+  font-family: "Bebas Neue", cursive;
   visibility: hidden;
   animation: menuVisible 1.5s 1s forwards;
   z-index: 10;
@@ -43,18 +43,6 @@ export const Title = styled.h1`
   color: ${primaryColor};
   font-weight: 700;
   margin: 0;
-
-  @media screen and (max-width: 737px) {
-    font-size: 1.2rem;
-  }
-`;
-
-export const TitleCode = styled.i`
-  margin: 0;
-  font-family: "Roboto";
-  font-size: 0.9rem;
-  color: ${normalTextColor};
-  font-weight: 700;
 `;
 
 export const MenuIcon = styled.div`
