@@ -1,14 +1,44 @@
 import styled from "styled-components";
 import { primaryColor, secondaryColor, normalTextColor } from "./global";
 
+export const AboutContainer = styled.section`
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Roboto";
+
+  @media screen and (max-width: 1206px) {
+    height: 60vh;
+    margin: 0 auto;
+    margin: 5rem 1.5rem 5rem 1.5rem;
+  }
+
+  @media screen and (max-width: 866px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    height: min-content !important;
+    margin-top: 6rem;
+  }
+`;
+
 export const TextContainer = styled.article`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 866px) {
+    width: 100%;
+    grid-row: 2;
+  }
 `;
 
 export const Title = styled.h1`
-  font-family: "SpaceMono";
-  font-size: 1.2rem;
+  font-family: "roboto";
+  font-size: 1.1rem;
   text-align: left;
   font-weight: 700;
   color: ${secondaryColor};
@@ -20,9 +50,9 @@ export const Title = styled.h1`
 `;
 
 export const TitleBiggerText = styled.p`
-  font-family: "Roboto";
+  font-family: "Bebas Neue", cursive;
   color: ${primaryColor};
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   line-height: 3.2rem;
   margin: 0;
 
@@ -32,7 +62,7 @@ export const TitleBiggerText = styled.p`
   }
 
   @media screen and (max-width: 472px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.6rem;
   }
 `;
@@ -44,7 +74,7 @@ export const Text = styled.p`
   font-weight: 400;
 
   max-width: 500px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 `;
 
@@ -55,17 +85,17 @@ export const ProfileImage = styled.img`
   align-self: center;
 
   @media screen and (max-width: 1206px) {
-    width: 20%;
+    width: 20rem;
     height: auto;
-    margin: 0;
-    align-self: center;
+    margin: 0 auto;
+    justify-self: center;
   }
 
-  @media only screen and (max-width: 603px) {
-    width: 30%;
+  @media only screen and (max-width: 866px) {
+    width: 9rem;
     height: auto;
     margin: 0;
-    align-self: left;
+    justify-self: left;
   }
 `;
 

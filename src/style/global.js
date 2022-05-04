@@ -6,7 +6,7 @@ import RobotoBold from "../fonts/Roboto-Bold.ttf";
 import RobotoLight from "../fonts/Roboto-Light.ttf";
 import SpaceMonoRegular from "../fonts/SpaceMono-Regular.ttf";
 import SpaceMonoBold from "../fonts/SpaceMono-Bold.ttf";
-import SoraBold from "../fonts/Sora-Bold.ttf";
+import BebasNeue from "../fonts/BebasNeue-Regular.ttf";
 
 export const primaryColor = "#AD90E7";
 export const secondaryColor = "#2AC3DE";
@@ -17,10 +17,10 @@ export const DarkBackgroundColor = "#121421";
 
 export const Container = styled.section`
   display: flex;
-  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  flex-direction: column;
   justify-content: center;
   align-items: ${(props) => (props.alignCenter ? "center" : "left")};
-  height: ${(props) => (props.vh100 ? "100vh" : "min-content")};
+  height: min-content;
   box-sizing: border-box;
   max-width: 1200px;
 
@@ -29,33 +29,27 @@ export const Container = styled.section`
   margin: 0 auto;
   margin-top: ${(props) =>
     props.noMargin || props.noMarginTop ? "0" : "12rem"};
-  margin-bottom: ${(props) => (props.noMargin ? "0" : "12rem")};
-  padding: 6rem 1rem 0rem 1rem;
+  margin-bottom: 12rem;
 
   @media screen and (max-width: 1206px) {
-    flex-direction: ${(props) =>
-      props.reverseColumn ? "column-reverse" : "column"};
-    margin: 5rem 0rem 5rem 0rem;
+    flex-direction: column;
+    margin: 5rem 1.5rem 5rem 1.5rem;
     height: min-content !important;
-  }
-
-  @media screen and (max-width: 737px) {
-    padding: 3rem 1.5rem 0rem 1.5rem;
   }
 `;
 
 export const CategoryTitle = styled.h1`
-  font-family: "SpaceMono";
-  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3.5rem;
   color: ${primaryColor};
   text-align: left;
-  font-weight: 700;
+  font-weight: 400;
 
   margin: 0;
   padding-bottom: 0.1rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -67,7 +61,7 @@ export const CategoryText = styled.p`
 
   max-width: 700px;
   margin-bottom: 5rem;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 
   @media screen and (max-width: 768px) {
     padding-left: 0;
@@ -75,7 +69,7 @@ export const CategoryText = styled.p`
 `;
 
 export const TextHighlight = styled.b`
-  font-family: "SpaceMono";
+  font-family: "Roboto";
   font-weight: 700;
   color: ${secondaryColor};
   margin: 0;
@@ -114,9 +108,8 @@ body {
     font-weight: 700;
 }
 @font-face {
-  font-family: "Sora";
-  src: url(${SoraBold});
-  font-weight: 700;
+  font-family: "Bebas Neue";
+  src: url(${BebasNeue});
 }
 
 a:link {
@@ -130,13 +123,6 @@ a:hover {
 }
 a:active {
   text-decoration: none;
-}
-
-.profileImageAnimation{
-  align-self: center !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media only screen and (max-width: 603px){

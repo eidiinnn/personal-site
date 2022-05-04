@@ -44,13 +44,19 @@ export const ProjectListLi = styled.li`
     box-shadow: 0px 0px 52px -6px rgba(50, 47, 74, 1);
   }
 
-  @media screen and (max-width: 514px) {
+  @media screen and (max-width: 1053px) {
+    width: 30%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 761px) {
     width: 100%;
     height: auto;
   }
 `;
 
 export const ProjectListTitle = styled.h1`
+  font-family: "Bebas Neue", cursive;
   color: ${primaryColor};
   align-self: left;
   font-size: 2rem;
@@ -63,11 +69,11 @@ export const Tech = styled.p`
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   font-size: 1.1rem;
 
-  @media screen and (max-width: 514px) {
+  @media screen and (max-width: 1053px) {
     max-width: 100%;
   }
 `;
@@ -79,7 +85,7 @@ export const Text = styled.p`
   font-weight: 400;
   width: 380px;
 
-  @media screen and (max-width: 514px) {
+  @media screen and (max-width: 1053px) {
     width: 100%;
     height: max-content;
   }
@@ -110,7 +116,8 @@ export const PdfResumeContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  font-size: 1.4rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.6rem;
   font-weight: 700;
   color: ${normalTextColor};
 
