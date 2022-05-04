@@ -17,10 +17,10 @@ export const DarkBackgroundColor = "#121421";
 
 export const Container = styled.section`
   display: flex;
-  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  flex-direction: column;
   justify-content: center;
   align-items: ${(props) => (props.alignCenter ? "center" : "left")};
-  height: ${(props) => (props.vh100 ? "100vh" : "min-content")};
+  height: min-content;
   box-sizing: border-box;
   max-width: 1200px;
 
@@ -29,18 +29,12 @@ export const Container = styled.section`
   margin: 0 auto;
   margin-top: ${(props) =>
     props.noMargin || props.noMarginTop ? "0" : "12rem"};
-  margin-bottom: ${(props) => (props.noMargin ? "0" : "12rem")};
-  padding: 6rem 1rem 0rem 1rem;
+  margin-bottom: 12rem;
 
   @media screen and (max-width: 1206px) {
-    flex-direction: ${(props) =>
-      props.reverseColumn ? "column-reverse" : "column"};
-    margin: 5rem 0rem 5rem 0rem;
+    flex-direction: column;
+    margin: 5rem 1.5rem 5rem 1.5rem;
     height: min-content !important;
-  }
-
-  @media screen and (max-width: 737px) {
-    padding: 3rem 1.5rem 0rem 1.5rem;
   }
 `;
 

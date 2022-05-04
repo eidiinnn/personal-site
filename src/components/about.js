@@ -4,6 +4,7 @@ import { textsAndConfigs } from "../textsAndConfigs";
 import profile from "../images/aboutImage.png";
 
 import {
+  AboutContainer,
   Title,
   TitleBiggerText,
   Text,
@@ -12,13 +13,12 @@ import {
   IconLink,
   TextContainer,
 } from "../style/about";
-import { Container } from "../style/global";
 import { Fade } from "react-awesome-reveal";
 
 export default class About extends Component {
   render() {
     return (
-      <Container row vh100 alignCenter noMargin reverseColumn id="about">
+      <AboutContainer id="about">
         <TextContainer>
           <Fade direction="up" triggerOnce duration={1000} damping={1}>
             <Title>
@@ -57,7 +57,7 @@ export default class About extends Component {
         >
           <ProfileImage src={profile} alt="it's me"></ProfileImage>
         </Fade>
-      </Container>
+      </AboutContainer>
     );
   }
 }
