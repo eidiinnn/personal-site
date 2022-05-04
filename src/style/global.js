@@ -6,7 +6,6 @@ import RobotoBold from "../fonts/Roboto-Bold.ttf";
 import RobotoLight from "../fonts/Roboto-Light.ttf";
 import SpaceMonoRegular from "../fonts/SpaceMono-Regular.ttf";
 import SpaceMonoBold from "../fonts/SpaceMono-Bold.ttf";
-import SoraBold from "../fonts/Sora-Bold.ttf";
 import BebasNeue from "../fonts/BebasNeue-Regular.ttf";
 
 export const primaryColor = "#AD90E7";
@@ -113,11 +112,6 @@ body {
     font-family: "SpaceMono";
     src: url(${SpaceMonoBold});
     font-weight: 700;
-}
-@font-face {
-  font-family: "Sora";
-  src: url(${SoraBold});
-  font-weight: 700;
 }
 @font-face {
   font-family: "Bebas Neue";
