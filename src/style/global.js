@@ -27,9 +27,8 @@ export const Container = styled.section`
   font-family: "Roboto";
 
   margin: 0 auto;
-  margin-top: ${(props) =>
-    props.noMargin || props.noMarginTop ? "0" : "12rem"};
-  margin-bottom: 12rem;
+  margin-top: ${(props) => (props.noMarginTop ? "0" : "12rem")};
+  margin-bottom: ${(props) => (props.finalCategory ? "3rem" : "12rem")};
 
   @media screen and (max-width: 1206px) {
     flex-direction: column;
