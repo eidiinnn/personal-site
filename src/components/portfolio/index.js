@@ -4,7 +4,6 @@ import {
   Container,
   CategoryTitle,
   CategoryText,
-  TextHighlight,
 } from "../../style/global";
 import { Fade } from "react-awesome-reveal";
 
@@ -16,8 +15,7 @@ export default class Portfolio extends Component {
           <CategoryTitle>Portfólio</CategoryTitle>
           <CategoryText>
             Alguns projetos pessoais que desenvolvi ou estou desenvolvendo no
-            momento. Atualmente estou trabalhando no&nbsp;
-            <TextHighlight>Fox Home</TextHighlight>.
+            momento.
           </CategoryText>
           <CreateHtmlList />
         </Fade>

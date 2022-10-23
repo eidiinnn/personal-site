@@ -1,7 +1,19 @@
 export const textsAndConfigs = {
-  aboutMeText: `Sou um desenvolvedor Front-end iniciando na carreira e com vontade de fazer diferença
-    no mundo através da programação. Atualmente se especializando em Front-end com
-    React, mas no futuro querendo ser Full-Stack.`,
+  aboutMeText: `Apaixonado por tecnologia e tudo oque ela pode fazer. 
+    Sempre gostei de criar coisas desde criança e achei na programação um 
+    jeito de fazer oque eu gosto de forma criativa e desafiadora.`,
+
+
+  experiences: [
+    {
+      name: 'Scl sistemas',
+      techs: 'Figma · Node.js · MongoDB · React Native · Expo · TypeScript · jQuery · Cascading Style Sheets (CSS) · JavaScript · HTML',
+      started:'Junho 2022',
+      end: 'Presente',
+      text: `Desenvolvimento e manutenção de projetos como 
+      TOTH-DIRECT, TOTHREP e Supervisor`
+    },
+  ],
 
   projects: [
     {

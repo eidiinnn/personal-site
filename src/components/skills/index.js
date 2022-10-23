@@ -6,7 +6,6 @@ import {
   Container,
   CategoryTitle,
   CategoryText,
-  TextHighlight,
 } from "../../style/global";
 import {
   SkillsContentContainer,
@@ -20,9 +19,7 @@ export default function Skills() {
       <Fade direction="up" triggerOnce duration={1000} damping={1}>
         <CategoryTitle>Habilidades</CategoryTitle>
         <CategoryText>
-          Amante de <TextHighlight>React</TextHighlight>, porém não é somente
-          essa tecnologia que utilizo. Aqui vai uma lista das minhas
-          habilidades:
+          Habilidades que uso no meu dia a dia como desenvolvedor.
         </CategoryText>
 
         <SkillsContentContainer>
