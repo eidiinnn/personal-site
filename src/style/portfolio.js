@@ -28,7 +28,7 @@ export const ProjectListLi = styled.li`
   justify-content: ${(props) => (props.center ? "center" : "space-between")};
 
   width: 400px;
-  height: 230px;
+  height: ${(props) => (props.noHeight ? '' : '230px')};
   margin: 0.7rem;
 
   border-top: 4px solid ${secondaryColor};
@@ -71,7 +71,9 @@ export const Tech = styled.p`
   align-items: center;
   font-weight: 700;
   margin: 0;
+  margin-bottom: ${(props) => props.marginBottom ? '5px' : 'unset'};
   font-size: 1.1rem;
+  color: ${(props) => (props.primary ? primaryColor : 'unset')};
 
   @media screen and (max-width: 1053px) {
     max-width: 100%;

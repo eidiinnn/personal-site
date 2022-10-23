@@ -3,6 +3,18 @@ export const textsAndConfigs = {
     Sempre gostei de criar coisas desde criança e achei na programação um 
     jeito de fazer oque eu gosto de forma criativa e desafiadora.`,
 
+
+  experiences: [
+    {
+      name: 'Scl sistemas',
+      techs: 'Figma · Node.js · MongoDB · React Native · Expo · TypeScript · jQuery · Cascading Style Sheets (CSS) · JavaScript · HTML',
+      started:'Junho 2022',
+      end: 'Presente',
+      text: `Desenvolvimento e manutenção de projetos como 
+      TOTH-DIRECT, TOTHREP e Supervisor`
+    },
+  ],
+
   projects: [
     {
       name: "Fox Home",
