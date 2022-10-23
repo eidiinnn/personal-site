@@ -1,4 +1,3 @@
-import react from 'react'
 import { textsAndConfigs } from '../textsAndConfigs'
 import {
   Container,
