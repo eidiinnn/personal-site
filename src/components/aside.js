@@ -7,7 +7,7 @@ export default class Aside extends Component {
   render() {
     return (
       <LinkIconContainers>
-        <IconsLinks href="https://www.linkedin.com/in/eduardosilvapn">
+        <IconsLinks href="https://www.linkedin.com/in/eduardo-silva-pn">
           <FaLinkedinIn />
         </IconsLinks>
         <IconsLinks href="https://api.whatsapp.com/send?phone=5548996303675">
