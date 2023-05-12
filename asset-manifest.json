@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.36b9c1b5.chunk.js",
-    "main.js.map": "/static/js/main.36b9c1b5.chunk.js.map",
+    "main.js": "/static/js/main.2ad9511d.chunk.js",
+    "main.js.map": "/static/js/main.2ad9511d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7fdd9ef7.js",
     "runtime-main.js.map": "/static/js/runtime-main.7fdd9ef7.js.map",
-    "static/js/2.26828d28.chunk.js": "/static/js/2.26828d28.chunk.js",
-    "static/js/2.26828d28.chunk.js.map": "/static/js/2.26828d28.chunk.js.map",
+    "static/js/2.0187a69f.chunk.js": "/static/js/2.0187a69f.chunk.js",
+    "static/js/2.0187a69f.chunk.js.map": "/static/js/2.0187a69f.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.26828d28.chunk.js.LICENSE.txt": "/static/js/2.26828d28.chunk.js.LICENSE.txt",
+    "static/js/2.0187a69f.chunk.js.LICENSE.txt": "/static/js/2.0187a69f.chunk.js.LICENSE.txt",
     "static/media/BebasNeue-Regular.12e3683f.ttf": "/static/media/BebasNeue-Regular.12e3683f.ttf",
     "static/media/Resume.71100816.pdf": "/static/media/Resume.71100816.pdf",
     "static/media/Roboto-Bold.75371f53.ttf": "/static/media/Roboto-Bold.75371f53.ttf",
@@ -19,7 +19,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7fdd9ef7.js",
-    "static/js/2.26828d28.chunk.js",
-    "static/js/main.36b9c1b5.chunk.js"
+    "static/js/2.0187a69f.chunk.js",
+    "static/js/main.2ad9511d.chunk.js"
   ]
 }
