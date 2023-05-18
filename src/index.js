@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { GlobalStyle } from "./style/global";
 
-import Menu from "./components/menu";
+// import Menu from "./components/menu";
+import Menu from "./components/newMenu";
 import About from "./components/about";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
