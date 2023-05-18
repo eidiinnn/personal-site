@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { primaryColor, normalTextColor } from '../style/global'
 
 export default class Menu extends Component {
    state = {
@@ -30,6 +31,9 @@ export default class Menu extends Component {
                   )
                })}
             </ul>
+            <div style={style.language}>
+               <div>PT</div> | <div style={style.languageDisabled}>EN</div>
+            </div>
          </div>
       )
    }
@@ -38,12 +42,18 @@ export default class Menu extends Component {
 const style: { [key: string]: React.CSSProperties } = {
    main: {
       width: '100%',
+      boxSizing: 'border-box',
+      padding: '0 50px',
       display: 'flex',
       alignItems: 'center',
+      justifyContent: 'space-between',
+      fontFamily: 'Roboto',
+      fontSize: 15,
+      color: normalTextColor,
    },
    linkList: {
       display: 'flex',
-      gap: 10,
+      gap: 15,
    },
    linkItem: {
       listStyle: 'none',
@@ -51,5 +61,15 @@ const style: { [key: string]: React.CSSProperties } = {
    linkA: {
       textTransform: 'uppercase',
       textDecoration: 'none',
+      fontWeight: 600,
+      color: normalTextColor,
+   },
+   language: {
+      fontWeight: 600,
+      display: 'inline-flex',
+      gap: 5,
+   },
+   languageDisabled: {
+      opacity: 0.7,
    },
 }
